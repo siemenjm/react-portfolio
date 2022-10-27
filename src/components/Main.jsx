@@ -1,7 +1,8 @@
 import React from 'react';
+import HomePage from '../pages/HomePage';
 
 export default function Main() {
     return (
-        <div>Main</div>
+        <HomePage />
     );
 }
