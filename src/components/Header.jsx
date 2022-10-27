@@ -13,12 +13,10 @@ export default function Header({ currentPage, setCurrentPage }) {
             <nav>
                 <NavLink path={'/'} page={'Home'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                 <NavLink path={'/about-me'} page={'About Me'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                {/* <Link to={'/'} onClick={handleClick} className={`nav-link`} >Home</Link>
-                <Link to={'/about-me'} onClick={handleClick} className={'nav-link'} >About Me</Link>
-                <Link to={'/'} className={'nav-link'} >Projects</Link>
-                <Link to={'/'} className={'nav-link'} >Client Work</Link>
-                <Link to={'/'} className={'nav-link'} >Contact</Link>
-                <Link to={'/'} className={'nav-link'} >Resume</Link> */}
+                <NavLink path={'/projects'} page={'Projects'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                <NavLink path={'/client-work'} page={'Client Work'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                <NavLink path={'/contact'} page={'Contact'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                <NavLink path={'/resume'} page={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </nav>
         </header>
     );
