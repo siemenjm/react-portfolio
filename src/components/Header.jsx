@@ -1,16 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/Header.css';
+import logo from '../assets/Color-logo-no-background.png';
 
 export default function Header() {
     return (
         <header>
-            // site logo
+            <Link to={'/'}>
+                <img src={logo} alt="Jared Siemen website logo" className='site-logo' />
+            </Link>
             <nav>
-                <Link to={'/'}>Home</Link>
-                <Link to={'/'}>About Me</Link>
-                <Link to={'/'}>Projects</Link>
-                <Link to={'/'}>Client Work</Link>
-                <Link to={'/'}>Contact</Link>
+                <Link to={'/'} className={'nav-link'} >Home</Link>
+                <Link to={'/'} className={'nav-link'} >About Me</Link>
+                <Link to={'/'} className={'nav-link'} >Projects</Link>
+                <Link to={'/'} className={'nav-link'} >Client Work</Link>
+                <Link to={'/'} className={'nav-link'} >Contact</Link>
+                <Link to={'/'} className={'nav-link'} >Resume</Link>
             </nav>
         </header>
     );

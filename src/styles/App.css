@@ -3,10 +3,10 @@
 :root {
     --primary-darkest: rgb(23,28,40);
     --primary-dark: rgb(28,36,50);
-    --primary-light: rgb(200, 217, 255);
+    --primary-light: rgb(172, 181, 207);
     --accent: rgb(61, 210, 204);
 
-    font-size: 20px;
+    font-size: 16px;
 }
 
 * {

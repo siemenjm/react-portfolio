@@ -1,0 +1,25 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+a {
+    line-height: 0;
+    text-decoration: none;
+}
+
+.site-logo {
+    max-width: 300px;
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: var(--primary-light);
+    font-size: 1rem;
+}
