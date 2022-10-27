@@ -11,7 +11,7 @@ export default function Header() {
             </Link>
             <nav>
                 <Link to={'/'} className={'nav-link'} >Home</Link>
-                <Link to={'/'} className={'nav-link'} >About Me</Link>
+                <Link to={'/about-me'} className={'nav-link'} >About Me</Link>
                 <Link to={'/'} className={'nav-link'} >Projects</Link>
                 <Link to={'/'} className={'nav-link'} >Client Work</Link>
                 <Link to={'/'} className={'nav-link'} >Contact</Link>
