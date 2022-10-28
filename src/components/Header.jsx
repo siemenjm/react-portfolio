@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaRegWindowClose } from 'react-icons/fa';
 import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
@@ -17,7 +17,7 @@ export default function Header({ currentPage, setCurrentPage }) {
 
     function displayDropdown() {
         return (
-            <nav className='responsive-nav'>
+            <nav className='responsive-dropdown'>
                 <NavLink path={'/'} page={'Home'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                 <NavLink path={'/about-me'} page={'About Me'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                 <NavLink path={'/projects'} page={'Projects'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
@@ -44,7 +44,11 @@ export default function Header({ currentPage, setCurrentPage }) {
                 </nav>
             </MediaQuery>
             <MediaQuery maxWidth={1024} >
-                <FaBars onClick={handleClick} />
+                {/* <nav className="responsive-nav">
+                    {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}
+                    {dropdownVisibility ? displayDropdown() : <></>}
+                </nav> */}
+                {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}
                 {dropdownVisibility ? displayDropdown() : <></>}
             </MediaQuery>
         </header>
