@@ -46,7 +46,7 @@ export default function Header({ currentPage, setCurrentPage }) {
                 </nav>
             </MediaQuery>
             <MediaQuery maxWidth={1024} >
-                {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}
+                {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} className={'menu-icon'} /> : <FaBars onClick={handleClick} className={'menu-icon'} />}
                 {dropdownVisibility ? displayDropdown() : <></>}
             </MediaQuery>
         </header>
