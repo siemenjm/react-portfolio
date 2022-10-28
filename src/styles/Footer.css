@@ -1,0 +1,24 @@
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer-top p {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid var(--primary-dark);
+}
+
+.footer-bottom a {
+    color: var(--accent);
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
