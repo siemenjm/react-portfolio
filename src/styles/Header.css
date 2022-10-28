@@ -19,10 +19,6 @@ a {
     gap: 2rem;
 }
 
-.responsive-nav {
-    display: none;
-}
-
 .nav-link {
     position: relative;
     color: var(--primary-light);
