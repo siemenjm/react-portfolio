@@ -44,10 +44,6 @@ export default function Header({ currentPage, setCurrentPage }) {
                 </nav>
             </MediaQuery>
             <MediaQuery maxWidth={1024} >
-                {/* <nav className="responsive-nav">
-                    {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}
-                    {dropdownVisibility ? displayDropdown() : <></>}
-                </nav> */}
                 {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}
                 {dropdownVisibility ? displayDropdown() : <></>}
             </MediaQuery>
