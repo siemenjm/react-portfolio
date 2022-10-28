@@ -12,7 +12,7 @@
 .footer-bottom {
     text-align: center;
     padding: 1rem;
-    border: 2px solid var(--primary-dark);
+    border-top: 2px solid var(--primary-dark);
 }
 
 .footer-bottom a {
@@ -21,4 +21,11 @@
 
 .footer-bottom a:hover {
     color: white;
+}
+
+@media (max-width: 676px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 }
