@@ -45,4 +45,15 @@ p {
 
 body {
     background-color: var(--primary-darkest);
+    min-height: 100vh;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    flex-grow: 1;
 }
