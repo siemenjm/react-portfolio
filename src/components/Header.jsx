@@ -6,6 +6,7 @@ import '../styles/Header.css';
 import logo from '../assets/Color-logo-no-background.png';
 import NavLink from './NavLink';
 import { useState } from 'react';
+import HeaderDropdown from './HeaderDropdown';
 
 export default function Header({ currentPage, setCurrentPage }) {
     const [dropdownVisibility, setDropdownVisibility] = useState(false);
@@ -13,19 +14,6 @@ export default function Header({ currentPage, setCurrentPage }) {
     function handleClick(e) {
         console.log('clicked');
         dropdownVisibility ? setDropdownVisibility(false) : setDropdownVisibility(true);
-    }
-
-    function displayDropdown() {
-        return (
-            <nav className='responsive-dropdown'>
-                <NavLink path={'/'} page={'Home'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                <NavLink path={'/about-me'} page={'About Me'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                <NavLink path={'/projects'} page={'Projects'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                <NavLink path={'/client-work'} page={'Client Work'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                <NavLink path={'/contact'} page={'Contact'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                <NavLink path={'/resume'} page={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-            </nav>
-        );
     }
 
     return (
@@ -47,7 +35,7 @@ export default function Header({ currentPage, setCurrentPage }) {
             </MediaQuery>
             <MediaQuery maxWidth={1024} >
                 {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} className={'menu-icon'} /> : <FaBars onClick={handleClick} className={'menu-icon'} />}
-                {dropdownVisibility ? displayDropdown() : <></>}
+                <HeaderDropdown dropdownVisibility={dropdownVisibility} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </MediaQuery>
         </header>
     );
