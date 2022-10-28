@@ -40,11 +40,13 @@ export default function Header({ currentPage, setCurrentPage }) {
                     <NavLink path={'/projects'} page={'Projects'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                     <NavLink path={'/client-work'} page={'Client Work'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                     <NavLink path={'/contact'} page={'Contact'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                    <NavLink path={'/resume'} page={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                    <div className="button-wrapper">
+                        <NavLink path={'/resume'} page={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                    </div>
                 </nav>
             </MediaQuery>
             <MediaQuery maxWidth={1024} >
-                {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} /> : <FaBars onClick={handleClick} />}
+                {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} className={'menu-icon'} /> : <FaBars onClick={handleClick} className={'menu-icon'} />}
                 {dropdownVisibility ? displayDropdown() : <></>}
             </MediaQuery>
         </header>
