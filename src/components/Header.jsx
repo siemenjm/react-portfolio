@@ -12,7 +12,6 @@ export default function Header({ currentPage, setCurrentPage }) {
     const [dropdownVisibility, setDropdownVisibility] = useState(false);
 
     function handleClick(e) {
-        console.log('clicked');
         dropdownVisibility ? setDropdownVisibility(false) : setDropdownVisibility(true);
     }
 
