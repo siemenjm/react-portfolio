@@ -9,13 +9,15 @@ import { useState } from 'react';
 import HeaderDropdown from './HeaderDropdown';
 
 export default function Header() {
+    const [currentPage, setCurrentPage] = useState('');
+
     return (
         <header>
             <img src={logo} alt="Jared Siemen website logo" className='site-logo' />
-            <nav>
-                <Link to={'/'}>Home</Link>
-                <Link to={'/about-me'}>About Me</Link>
-                <Link to={'/contact'}>Contact</Link>
+            <nav className='desktop-nav'>
+                <NavLink path={'/'} page={'Home'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                <NavLink path={'/about-me'} page={'About Me'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                <NavLink path={'/contact'} page={'Contact'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             </nav>
         </header>
     );

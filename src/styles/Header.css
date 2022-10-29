@@ -58,11 +58,11 @@ a {
     color: var(--accent);
 }
 
-.active {
+.active-link {
     color: var(--accent);
 }
 
-.active::after {
+.active-link::after {
     content: '';
     position: absolute;
     bottom: -0.75rem;
@@ -73,7 +73,7 @@ a {
     height: 2px;
 }
 
-.button-wrapper .active::after {
+.button-wrapper .active-link::after {
     background-color: transparent;
 }
 
@@ -82,7 +82,7 @@ a {
     text-align: center;
 }
 
-.responsive-dropdown > .active::after {
+.responsive-dropdown > .active-link::after {
     display: none;
 }
 
