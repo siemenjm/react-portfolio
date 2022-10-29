@@ -1,14 +1,20 @@
 import React from 'react';
 import NavLink from './NavLink';
 
-export default function HeaderDropdown({ dropdownVisibility, currentPage, setCurrentPage }) {
+export default function HeaderDropdown({ dropdownVisibility, setDropdownVisibility, currentPage, setCurrentPage }) {
     let active = '';
     if (dropdownVisibility) {
         active = 'active-dropdown';
     }
 
+    function handleClick(e) {
+        if (dropdownVisibility) {
+            setDropdownVisibility(false);
+        }
+    }
+
     return (
-        <nav className={`responsive-dropdown ${active}`}>
+        <nav onClick={handleClick} className={`responsive-dropdown ${active}`}>
             <NavLink path={'/'} page={'Home'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             <NavLink path={'/about-me'} page={'About Me'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
             <NavLink path={'/projects'} page={'Projects'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
