@@ -8,7 +8,8 @@ import NavLink from './NavLink';
 import { useState } from 'react';
 import HeaderDropdown from './HeaderDropdown';
 
-export default function Header({ currentPage, setCurrentPage }) {
+export default function Header() {
+    const [currentPage, setCurrentPage] = useState('');
     const [dropdownVisibility, setDropdownVisibility] = useState(false);
 
     function handleClick(e) {

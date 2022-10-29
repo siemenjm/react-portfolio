@@ -5,11 +5,9 @@ import Main from './components/Main';
 import { useState } from 'react';
 
 function App() {
-    const [currentPage, setCurrentPage] = useState('');
-
     return (
         <>
-            <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Header />
             <Main />
             <Footer />
         </>
