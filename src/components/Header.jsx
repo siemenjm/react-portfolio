@@ -11,13 +11,24 @@ import HeaderDropdown from './HeaderDropdown';
 export default function Header() {
     const [currentPage, setCurrentPage] = useState('');
 
+    const pages = [
+        { title: 'Home', path: '/' },
+        { title: 'About Me', path: '/about-me' },
+        { title: 'Contact', path: '/contact' },
+    ];
+
+    const navLinks = pages.map((page) => {
+        return <NavLink path={page.path} page={page.title} currentPage={currentPage} setCurrentPage={setCurrentPage} key={page.title} />
+    });
+
     return (
         <header>
             <img src={logo} alt="Jared Siemen website logo" className='site-logo' />
             <nav className='desktop-nav'>
-                <NavLink path={'/'} page={'Home'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                {navLinks}
+                {/* <NavLink path={'/'} page={'Home'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                 <NavLink path={'/about-me'} page={'About Me'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
-                <NavLink path={'/contact'} page={'Contact'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                <NavLink path={'/contact'} page={'Contact'} currentPage={currentPage} setCurrentPage={setCurrentPage} /> */}
             </nav>
         </header>
     );
