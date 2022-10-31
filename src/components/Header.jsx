@@ -40,7 +40,7 @@ export default function Header() {
                 <nav className='desktop-nav'>
                     {navLinks}
                     <div className="button-wrapper">
-                        <NavLink path={'/resume'} page={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                        <NavLink path={'/resume'} pageTitle={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
                     </div>
                 </nav>
             </MediaQuery>
@@ -48,7 +48,7 @@ export default function Header() {
                 {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} className={'menu-icon'} /> : <FaBars onClick={handleClick} className={'menu-icon'} />}
                 <nav onClick={handleClick} className={`responsive-dropdown ${dropdownStyle}`} >
                     {dropdownVisibility ? navLinks  : <></>}
-                    {dropdownVisibility ? <NavLink path={'/resume'} page={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} /> : <></>}
+                    {dropdownVisibility ? <NavLink path={'/resume'} pageTitle={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} /> : <></>}
                 </nav>
             </MediaQuery>
         </header>
