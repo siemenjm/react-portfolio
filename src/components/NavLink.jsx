@@ -15,18 +15,4 @@ export default function NavLink({ path, page, currentPage, setCurrentPage }) {
     return (
         <Link to={path} onClick={handleClick} className={`nav-link ${linkStyle}`} >{page}</Link>
     );
-    
-    
-    // let style = '';
-    // if (currentPage === path) {
-    //     style = 'active';
-    // }
-
-    // function handleClick(e) {
-    //     setCurrentPage(path);
-    // }
-
-    // return (
-    //     <Link to={path} onClick={handleClick} className={`nav-link ${style}`} >{page}</Link>
-    // );
 }
