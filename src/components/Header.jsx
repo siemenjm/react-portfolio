@@ -20,7 +20,7 @@ export default function Header() {
     const [dropdownVisibility, setDropdownVisibility] = useState(false);
 
     const navLinks = pages.map((page) => {
-        return <NavLink path={page.path} page={page.title} currentPage={currentPage} setCurrentPage={setCurrentPage} key={page.title} />
+        return <NavLink path={page.path} pageTitle={page.title} currentPage={currentPage} setCurrentPage={setCurrentPage} key={page.title} />
     });
 
     let dropdownStyle = '';
@@ -46,7 +46,7 @@ export default function Header() {
             </MediaQuery>
             <MediaQuery maxWidth={1024}>
                 {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} className={'menu-icon'} /> : <FaBars onClick={handleClick} className={'menu-icon'} />}
-                <nav onClick={handleClick} className={`responsive-dropdown ${dropdownStyle}`} >
+                <nav onClick={handleClick} className={`responsive-nav ${dropdownStyle}`} >
                     {dropdownVisibility ? navLinks  : <></>}
                     {dropdownVisibility ? <NavLink path={'/resume'} pageTitle={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} /> : <></>}
                 </nav>

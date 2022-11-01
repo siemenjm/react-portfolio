@@ -22,13 +22,6 @@ a {
 }
 
 .responsive-nav {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.responsive-dropdown {
     background-color: var(--primary-dark);
     position: absolute;
     top: 5rem;
@@ -44,7 +37,7 @@ a {
     transition: height 0.25s ease;
 }
 
-.responsive-dropdown.active-dropdown {
+.responsive-nav.active-dropdown {
     height: 208px;
 }
 
@@ -77,12 +70,12 @@ a {
     background-color: transparent;
 }
 
-.responsive-dropdown > .nav-link {
+.responsive-nav > .nav-link {
     width: 100%;
     text-align: center;
 }
 
-.responsive-dropdown > .active-link::after {
+.responsive-nav > .active-link::after {
     display: none;
 }
 
