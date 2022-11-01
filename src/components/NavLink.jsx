@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function NavLink({ path, page, currentPage, setCurrentPage }) {
+export default function NavLink({ path, pageTitle, currentPage, setCurrentPage }) {
     let linkStyle = '';
     if (currentPage === path) {
         linkStyle = 'active-link';
@@ -13,6 +13,6 @@ export default function NavLink({ path, page, currentPage, setCurrentPage }) {
     }
 
     return (
-        <Link to={path} onClick={handleClick} className={`nav-link ${linkStyle}`} >{page}</Link>
+        <Link to={path} onClick={handleClick} className={`nav-link ${linkStyle}`} >{pageTitle}</Link>
     );
 }
