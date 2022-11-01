@@ -13,7 +13,7 @@ export default function Footer() {
                     <img src={logo} alt="Jared Siemen website logo" className='site-logo' />
                 </Link>
                 <div className="button-wrapper">
-                    <NavLink path={'/resume'} page={'Resume'} />
+                    <NavLink path={'/resume'} pageTitle={'Resume'} />
                 </div>
             </div>
             <div className="footer-bottom">
