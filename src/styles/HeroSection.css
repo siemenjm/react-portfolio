@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 5rem 0;
+    padding: 5rem 10%;
 }
 
 .hero-section > .section-header-wrapper {
