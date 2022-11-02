@@ -73,6 +73,7 @@ p {
 body {
     background-color: var(--primary-darkest);
     min-height: 100vh;
+    overflow: hidden;
 }
 
 #root {

@@ -4,14 +4,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin: 5rem 0;
+    padding: 5rem 0;
 }
 
-.hero-section > .section-header {
+.hero-section > .section-header-wrapper {
     position: absolute;
-    font-size: 10rem;
-    align-self: center;
-    animation: sectionHeaderAnimation 1.5s ease-out;
+    height: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-letter {
+    right: 1000px;
+    font-size: 5rem;
+    line-height: 5rem;
+}
+
+.first-letter {
+    animation: letterAnimation 1s ease-out;
+}
+.second-letter {
+    animation: letterAnimation 1.25s ease-out;
+}
+.third-letter {
+    animation: letterAnimation 1.5s ease-out;
+}
+.fourth-letter {
+    animation: letterAnimation 1.75s ease-out;
+}
+.fifth-letter {
+    animation: letterAnimation 2s ease-out;
 }
 
 .hero-section > h2 {
@@ -23,9 +48,9 @@
 }
 
 /* ----- Animations ----- */
-@keyframes sectionHeaderAnimation {
+@keyframes letterAnimation {
     0% {
-        transform: translateX(-200%);
+        transform: translateX(-100vw);
     }
     100% {
         transform: translateX(0);
