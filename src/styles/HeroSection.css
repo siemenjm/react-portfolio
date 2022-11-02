@@ -39,6 +39,13 @@
     animation: letterAnimation 2s ease-out;
 }
 
+.hero-section > h2, .hero-section > p {
+    opacity: 0;
+    animation: opacityAnimation 2s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
 .hero-section > h2 {
     max-width: 75%;
 }
@@ -54,5 +61,14 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
