@@ -85,7 +85,7 @@ a {
     width: 1.5rem;
 }
 
-svg:hover {
+.menu-icon:hover {
     fill: var(--accent);
 }
 
