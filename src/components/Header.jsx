@@ -15,8 +15,7 @@ const pages = [
     { title: 'Contact', path: '/contact' },
 ];
 
-export default function Header() {
-    const [currentPage, setCurrentPage] = useState('/');
+export default function Header({ currentPage, setCurrentPage }) {
     const [dropdownVisibility, setDropdownVisibility] = useState(false);
 
     const navLinks = pages.map((page) => {

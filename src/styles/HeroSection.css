@@ -38,7 +38,7 @@
     animation: letterAnimation 2s ease-out;
 }
 
-.hero-section > h2, .hero-section > p {
+.hero-section > h2, .hero-section > p, .hero-section > .button-wrapper {
     opacity: 0;
     animation: opacityAnimation 2s linear;
     animation-delay: 2s;
@@ -52,6 +52,7 @@
 .hero-section > p {
     max-width: 66%;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* ----- Animations ----- */

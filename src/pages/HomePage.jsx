@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../styles/HeroSection.css';
+import NavLink from '../components/NavLink';
 
-export default function HomePage() {
+export default function HomePage({ currentPage, setCurrentPage }) {
     return (
         <div className='page'>
             <section className="hero-section">
@@ -16,6 +17,9 @@ export default function HomePage() {
                 <h2>I'm Jared Siemen.</h2>
                 <h2 className='color-light'>I design and develop full stack websites.</h2>
                 <p>I’m a full stack software developer with a diverse skillset that ranges from building single page applications using React and Express.js, to quickly churning out a marketing site for a small business, to designing a website interface from the ground up using Adobe Xd. Currently freelancing, but looking to join a team.</p>
+                <div className="button-wrapper">
+                    <NavLink path={'/contact'} pageTitle={'Let\'s Connect'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                </div>
             </section>
         </div>
     );
