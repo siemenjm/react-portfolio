@@ -1,0 +1,33 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 5rem 0;
+}
+
+.hero-section > .section-header {
+    position: absolute;
+    font-size: 10rem;
+    align-self: center;
+    animation: sectionHeaderAnimation 1.5s ease-out;
+}
+
+.hero-section > h2 {
+    max-width: 75%;
+}
+
+.hero-section > p {
+    max-width: 66%;
+}
+
+/* ----- Animations ----- */
+@keyframes sectionHeaderAnimation {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
