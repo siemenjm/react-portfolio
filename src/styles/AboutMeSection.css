@@ -42,6 +42,20 @@
 
 /* ----- Mobile View ----- */
 @media (max-width: 767px) {
+    .about-me-section > .upper-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+
+    .about-me-section .content-wrapper {
+        width: 100%;
+    }
+
+    .headshot-wrapper {
+        width: 75%;
+    }
+
     .about-me-section .header-letter {
         font-size: 3rem;
         line-height: 5rem;
