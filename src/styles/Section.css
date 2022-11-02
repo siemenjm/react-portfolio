@@ -14,3 +14,18 @@
         transform: translateY(0);
     }
 }
+
+
+/* ----- Mobile View ----- */
+@media (max-width: 767px) {
+    .section-header-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .about-me-section .header-letter {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}

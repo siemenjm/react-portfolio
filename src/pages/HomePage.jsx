@@ -9,7 +9,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
             <section className="hero-section">
                 <h1 className="hidden">Jared Siemen</h1>
                 <div className="section-header-wrapper">
-                    <h2 className={`header-letter first-letter color-accent`}>H</h2>
+                    <h2 className='header-letter first-letter color-accent'>H</h2>
                     <h2 className='header-letter second-letter color-accent'>e</h2>
                     <h2 className='header-letter third-letter color-accent'>l</h2>
                     <h2 className='header-letter fourth-letter color-accent'>l</h2>
@@ -23,8 +23,8 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 </div>
             </section>
             <section className="about-me-section">
-            <div className="section-header-wrapper">
-                    <h2 className={`header-letter first-letter color-accent`}>A</h2>
+                <div className="section-header-wrapper">
+                    <h2 className='header-letter first-letter color-accent'>A</h2>
                     <h2 className='header-letter second-letter color-accent'>b</h2>
                     <h2 className='header-letter third-letter color-accent'>o</h2>
                     <h2 className='header-letter fourth-letter color-accent'>u</h2>

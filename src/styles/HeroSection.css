@@ -75,19 +75,19 @@
         margin-bottom: 2rem;
     }
 
-    .first-letter {
+    .hero-section .first-letter {
         animation: letterAnimation 2s ease-out;
     }
-    .second-letter {
+    .hero-section .second-letter {
         animation: letterAnimation 1.75s ease-out;
     }
-    .third-letter {
+    .hero-section .third-letter {
         animation: letterAnimation 1.5s ease-out;
     }
-    .fourth-letter {
+    .hero-section .fourth-letter {
         animation: letterAnimation 1.25s ease-out;
     }
-    .fifth-letter {
+    .hero-section .fifth-letter {
         animation: letterAnimation 1s ease-out;
     }
 
