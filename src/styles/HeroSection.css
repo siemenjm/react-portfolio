@@ -72,3 +72,45 @@
         opacity: 1;
     }
 }
+
+
+/* ----- Mobile View ----- */
+@media (max-width: 767px) {
+    .hero-section {
+        padding: 1rem 10%;
+    }
+    
+    .hero-section > .section-header-wrapper {
+        position: relative;
+        align-self: center;
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+
+    .first-letter {
+        animation: letterAnimation 2s ease-out;
+    }
+    .second-letter {
+        animation: letterAnimation 1.75s ease-out;
+    }
+    .third-letter {
+        animation: letterAnimation 1.5s ease-out;
+    }
+    .fourth-letter {
+        animation: letterAnimation 1.25s ease-out;
+    }
+    .fifth-letter {
+        animation: letterAnimation 1s ease-out;
+    }
+
+    .hero-section > h2 {
+        max-width: 100%;
+        font-size: 1.953rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-section > p {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
