@@ -16,7 +16,7 @@ const pages = [
 ];
 
 export default function Header() {
-    const [currentPage, setCurrentPage] = useState('');
+    const [currentPage, setCurrentPage] = useState('/');
     const [dropdownVisibility, setDropdownVisibility] = useState(false);
 
     const navLinks = pages.map((page) => {
