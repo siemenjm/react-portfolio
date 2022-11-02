@@ -1,0 +1,16 @@
+.section-header-wrapper {
+    animation: floatingAnimation 2s ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floatingAnimation {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
