@@ -23,9 +23,4 @@
         flex-direction: row;
         justify-content: center;
     }
-
-    .about-me-section .header-letter {
-        font-size: 4rem;
-        line-height: 5rem;
-    }
 }
