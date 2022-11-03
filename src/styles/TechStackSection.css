@@ -18,6 +18,13 @@
     gap: 1rem;
     align-items: center;
     text-align: center;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: box-shadow 0.25s ease;
+}
+
+.tech-wrapper:hover {
+    box-shadow: 5px 5px var(--accent);
 }
 
 .tech-wrapper img {
