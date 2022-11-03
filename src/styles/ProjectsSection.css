@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+.projects-section .first-letter {
+    padding-top: 1rem;
+}
+
+.projects-section .eigth-letter {
+    padding-bottom: 1rem;
+}
+
 .projects-section > .content-wrapper {
     display: flex;
     flex-direction: column;
