@@ -14,6 +14,7 @@ import expressLogo from '../assets/Expressjs.png';
 import mongoLogo from '../assets/MongoDB_Logo.svg';
 import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import wordpressLogo from '../assets/WordPress_logo.svg';
+import thriftScreenshot from '../assets/Thrift_screenshot.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
 
@@ -112,6 +113,45 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h2 className='header-letter eigth-letter color-accent'>c</h2>
                     <h2 className='header-letter ninth-letter color-accent'>k</h2>
                     <div className="background-line"></div>
+                </div>
+            </section>
+            <section className="projects-section">
+                <div className="section-header-wrapper">
+                    <h2 className='header-letter first-letter color-accent'>P</h2>
+                    <h2 className='header-letter second-letter color-accent'>r</h2>
+                    <h2 className='header-letter third-letter color-accent'>o</h2>
+                    <h2 className='header-letter fourth-letter color-accent'>j</h2>
+                    <h2 className='header-letter fifth-letter color-accent'>e</h2>
+                    <h2 className='header-letter sixth-letter color-accent'>c</h2>
+                    <h2 className='header-letter seventh-letter color-accent'>t</h2>
+                    <h2 className='header-letter eigth-letter color-accent'>s</h2>
+                    <div className="background-line"></div>
+                </div>
+                <div className="content-wrapper">
+                    <h3>Some Cool Things I've Made</h3>
+                    <div className="project-card">
+                        <div>
+                            <img src={thriftScreenshot} alt="Thrift screeshot showing a graph" className="project-screenshot" />
+                        </div>
+                        <div>
+                            <h4>Thrift - Financial Tracking App</h4>
+                            <p>Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented. </p>
+                            <div className="project-tech-wrapper">
+                                <p>PostgreSQL</p>
+                                <p>Express.js</p>
+                                <p>React.js</p>
+                                <p>Node.js</p>
+                            </div>
+                            <div className="project-links-wrapper">
+                                <Link to={'https://github.com/siemenjm/backend-thrift'} >
+                                    <img src="" alt="Github icon" className="project-link-logo" />
+                                </Link>
+                                <Link to={'https://thrift-financial.netlify.app/'} >
+                                    <img src="" alt="Leave-page icon" className="project-link-logo" />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
