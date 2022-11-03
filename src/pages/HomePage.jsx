@@ -20,6 +20,7 @@ import sleeperSheetsScreenshot from '../assets/Sleeper_Sheets_screenshot.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import MediaQuery from 'react-responsive';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
     return (
@@ -133,14 +134,22 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="content-wrapper">
                     <h3>Some Cool Things I've Made</h3>
                     <div className="project-card">
+                        <MediaQuery maxWidth={1024}>
+                            <div className="content-wrapper">
+                                <h4><a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >Thrift</a></h4>
+                                <h5>Financial Tracking App</h5>
+                            </div>
+                        </MediaQuery>
                         <div className='image-wrapper'>
                             <a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >
                                 <img src={thriftScreenshot} alt="Thrift screeshot showing a graph" className="project-screenshot" />
                             </a>
                         </div>
                         <div className='content-wrapper right-wrapper'>
-                            <h4><a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >Thrift</a></h4>
-                            <h5>Financial Tracking App</h5>
+                            <MediaQuery minWidth={1025}>
+                                <h4><a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >Thrift</a></h4>
+                                <h5>Financial Tracking App</h5>
+                            </MediaQuery>
                             <p>Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented using <a href='https://www.chartjs.org/' target='_blank' rel='noopener noreferrer' >Chart.js</a>. </p>
                             <div className="project-tech-wrapper">
                                 <p>PostgreSQL</p>
@@ -159,14 +168,22 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                         </div>
                     </div>
                     <div className="project-card reverse">
+                        <MediaQuery maxWidth={1024}>
+                            <div className="content-wrapper">
+                                <h4><a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >Sleeper Sheets</a></h4>
+                                <h5>Fantasy Football Data App</h5>
+                            </div>
+                        </MediaQuery>
                         <div className='image-wrapper'>
                             <a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >
                                 <img src={sleeperSheetsScreenshot} alt="Sleeper Sheets screeshot showing matchup page" className="project-screenshot" />
                             </a>
                         </div>
                         <div className='content-wrapper left-wrapper'>
-                            <h4><a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >Sleeper Sheets</a></h4>
-                            <h5>Fantasy Football Data App</h5>
+                            <MediaQuery minWidth={1025}>
+                                <h4><a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >Sleeper Sheets</a></h4>
+                                <h5>Fantasy Football Data App</h5>
+                            </MediaQuery>
                             <p>Sleeper Sheets is a full-stack MERN fantasy football application that consumes the Sleeper API to grab a user’s Sleeper teams, leagues, stats, projections, etc. and display that data to the user.</p>
                             <div className="project-tech-wrapper">
                                 <p>MongoDB</p>
