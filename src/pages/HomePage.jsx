@@ -81,15 +81,15 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                         <p>React.js</p>
                     </div>
                     <div className="tech-wrapper">
-                        <img src={nodeLogo} alt="Node.js logo" />
+                        <img src={nodeLogo} alt="Node.js logo" className='light-background' />
                         <p>Node.js</p>
                     </div>
                     <div className="tech-wrapper">
-                        <img src={expressLogo} alt="Express.js logo" />
+                        <img src={expressLogo} alt="Express.js logo" className='light-background' />
                         <p>Express.js</p>
                     </div>
                     <div className="tech-wrapper">
-                        <img src={mongoLogo} alt="MongoDB logo" />
+                        <img src={mongoLogo} alt="MongoDB logo" className='light-background' />
                         <p>MongoDB</p>
                     </div>
                     <div className="tech-wrapper">
@@ -97,7 +97,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                         <p>PostgreSQL</p>
                     </div>
                     <div className="tech-wrapper">
-                        <img src={wordpressLogo} alt="WordPress logo" />
+                        <img src={wordpressLogo} alt="WordPress logo" className='light-background' />
                         <p>WordPress</p>
                     </div>
                 </div>
