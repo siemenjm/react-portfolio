@@ -8,16 +8,6 @@
     animation-iteration-count: infinite;
 }
 
-/* .section-header-wrapper::before {
-    content: '';
-    position: absolute;
-    top: -1rem;
-    display: block;
-    background-color: var(--accent);
-    width: 2px;
-    height: 100%;
-} */
-
 .header-letter {
     font-size: 3rem;
     font-weight: normal;

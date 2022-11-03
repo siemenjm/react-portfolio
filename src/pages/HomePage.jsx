@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/HeroSection.css';
-import '../styles/Section.css';
+import '../styles/SectionHeader.css';
 import '../styles/AboutMeSection.css';
 import headshot from '../assets/headshot.png';
 import NavLink from '../components/NavLink';
