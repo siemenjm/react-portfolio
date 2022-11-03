@@ -16,6 +16,7 @@ import mongoLogo from '../assets/MongoDB_Logo.svg';
 import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import wordpressLogo from '../assets/WordPress_logo.svg';
 import thriftScreenshot from '../assets/Thrift_screenshot.png';
+import sleeperSheetsScreenshot from '../assets/Sleeper_Sheets_screenshot.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
@@ -152,6 +153,32 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                                     <FaGithub className='project-link-icon' />
                                 </a>
                                 <a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >
+                                    <FaExternalLinkAlt className='project-link-icon' />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="project-card reverse">
+                        <div className='image-wrapper'>
+                            <a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >
+                                <img src={sleeperSheetsScreenshot} alt="Sleeper Sheets screeshot showing matchup page" className="project-screenshot" />
+                            </a>
+                        </div>
+                        <div className='content-wrapper left-wrapper'>
+                            <h4><a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >Sleeper Sheets</a></h4>
+                            <h5>Fantasy Football Data App</h5>
+                            <p>Sleeper Sheets is a full-stack MERN fantasy football application that consumes the Sleeper API to grab a user’s Sleeper teams, leagues, stats, projections, etc. and display that data to the user.</p>
+                            <div className="project-tech-wrapper">
+                                <p>MongoDB</p>
+                                <p>Express.js</p>
+                                <p>React.js</p>
+                                <p>Node.js</p>
+                            </div>
+                            <div className="project-links-wrapper">
+                                <a href='https://github.com/siemenjm/frontend-sleeper-sheets' target='_blank' rel='noopener noreferrer' >
+                                    <FaGithub className='project-link-icon' />
+                                </a>
+                                <a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >
                                     <FaExternalLinkAlt className='project-link-icon' />
                                 </a>
                             </div>

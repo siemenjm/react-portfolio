@@ -15,12 +15,16 @@
 .projects-section > .content-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .project-card {
     display: flex;
     align-items: center;
+}
+
+.project-card.reverse {
+    flex-direction: row-reverse;
 }
 
 .project-card > div {
@@ -50,6 +54,13 @@
     padding-left: 10%;
 }
 
+.project-card > .left-wrapper {
+    padding-left: 0;
+    padding-right: 10%;
+    align-items: flex-start;
+    text-align: left;
+}
+
 .project-card > .content-wrapper > h4 > a, .project-card > .content-wrapper > p > a {
     color: var(--accent);
 }
@@ -70,6 +81,11 @@
     padding-left: 3rem;
     border-radius: 5px;
     margin-bottom: 1rem;
+}
+
+.project-card > .left-wrapper > p {
+    padding-left: 1rem;
+    padding-right: 3rem;
 }
 
 .project-card > .content-wrapper > .project-tech-wrapper {
