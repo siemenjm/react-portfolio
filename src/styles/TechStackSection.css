@@ -65,6 +65,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(5, 1fr);
         gap: 5rem;
+        margin: 0;
     }
 
     .tech-stack-section .header-letter {
