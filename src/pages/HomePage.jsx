@@ -1,8 +1,19 @@
 import React from 'react';
+import '../styles/AboutMeSection.css';
 import '../styles/HeroSection.css';
 import '../styles/SectionHeader.css';
-import '../styles/AboutMeSection.css';
+import '../styles/TechStackSection.css';
 import headshot from '../assets/headshot.png';
+import htmlLogo from '../assets/HTML_logo.png';
+import cssLogo from '../assets/css_logo.png';
+import jsLogo from '../assets/JavaScript-logo.png';
+import pythonLogo from '../assets/python-logo-only.png';
+import reactLogo from '../assets/React-icon.svg';
+import nodeLogo from '../assets/Node.js_logo.svg';
+import expressLogo from '../assets/Expressjs.png';
+import mongoLogo from '../assets/MongoDB_Logo.svg';
+import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
+import wordpressLogo from '../assets/WordPress_logo.svg';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
 
@@ -45,6 +56,62 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="headshot-wrapper">
                     <img src={headshot} alt="Jared Siemen headshot image" />
                     <div className="headshot-background"></div>
+                </div>
+            </section>
+            <section className="tech-stack-section">
+                <div className="content-wrapper">
+                    <div className="tech-wrapper">
+                        <img src={htmlLogo} alt="HTML logo" />
+                        <p>HTML</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={cssLogo} alt="CSS logo" />
+                        <p>CSS</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={jsLogo} alt="JavaScript logo" />
+                        <p>JavaScript</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={pythonLogo} alt="Python logo" />
+                        <p>Python</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={reactLogo} alt="React.js logo" />
+                        <p>React.js</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={nodeLogo} alt="Node.js logo" />
+                        <p>Node.js</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={expressLogo} alt="Express.js logo" />
+                        <p>Express.js</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={mongoLogo} alt="MongoDB logo" />
+                        <p>MongoDB</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={postgresqlLogo} alt="PostgreSQL logo" />
+                        <p>PostgreSQL</p>
+                    </div>
+                    <div className="tech-wrapper">
+                        <img src={wordpressLogo} alt="WordPress logo" />
+                        <p>WordPress</p>
+                    </div>
+                </div>
+                <div className="section-header-wrapper">
+                    <h2 className='header-letter first-letter color-accent'>T</h2>
+                    <h2 className='header-letter second-letter color-accent'>e</h2>
+                    <h2 className='header-letter third-letter color-accent'>c</h2>
+                    <h2 className='header-letter fourth-letter color-accent'>h</h2>
+                    <h2 className='header-letter fifth-letter color-accent'>S</h2>
+                    <h2 className='header-letter sixth-letter color-accent'>t</h2>
+                    <h2 className='header-letter seventh-letter color-accent'>a</h2>
+                    <h2 className='header-letter eigth-letter color-accent'>c</h2>
+                    <h2 className='header-letter ninth-letter color-accent'>k</h2>
+                    <div className="background-line"></div>
                 </div>
             </section>
         </div>

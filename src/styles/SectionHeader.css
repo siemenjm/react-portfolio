@@ -11,7 +11,7 @@
 .header-letter {
     font-size: 3rem;
     font-weight: normal;
-    line-height: 3rem;
+    line-height: 2.5rem;
     background-color: var(--primary-darkest);
     z-index: 10;
 }

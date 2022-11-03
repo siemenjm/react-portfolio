@@ -1,0 +1,28 @@
+.tech-stack-section  {
+    flex-direction: row;
+    gap: 7.5rem;
+    align-items: center;
+}
+
+.tech-stack-section .content-wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.tech-stack-section img {
+    max-width: 100px;
+}
+
+.tech-stack-section .first-letter {
+    padding-top: 1rem;
+}
+
+.tech-stack-section .fifth-letter {
+    padding-top: 3rem;
+}
+
+.tech-stack-section .ninth-letter {
+    padding-bottom: 1rem;
+}
