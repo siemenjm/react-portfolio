@@ -33,7 +33,7 @@
 
 .project-screenshot {
     width: 100%;
-    border: 3px solid var(--accent);
+    border: 3px solid var(--primary-light);
     border-radius: 5px;
     box-shadow: 1rem 1rem var(--accent);
     transition: box-shadow 0.25s ease;
