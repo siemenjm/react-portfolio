@@ -15,14 +15,16 @@ import expressLogo from '../assets/Expressjs.png';
 import mongoLogo from '../assets/MongoDB_Logo.svg';
 import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import wordpressLogo from '../assets/WordPress_logo.svg';
-import thriftScreenshot from '../assets/Thrift_screenshot.png';
-import sleeperSheetsScreenshot from '../assets/Sleeper_Sheets_screenshot.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import MediaQuery from 'react-responsive';
+import projectData from '../data/project_data';
+import Project from '../components/Project';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
+    const allProjects = projectData.map((project, index) => {
+        return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;           
+    });
+
     return (
         <div className='page'>
             <section className="hero-section">
@@ -133,74 +135,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 </div>
                 <div className="content-wrapper">
                     <h3>Some Cool Things I've Made</h3>
-                    <div className="project-card">
-                        <MediaQuery maxWidth={1024}>
-                            <div className="content-wrapper">
-                                <h4><a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >Thrift</a></h4>
-                                <h5>Financial Tracking App</h5>
-                            </div>
-                        </MediaQuery>
-                        <div className='image-wrapper'>
-                            <a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >
-                                <img src={thriftScreenshot} alt="Thrift screeshot showing a graph" className="project-screenshot" />
-                            </a>
-                        </div>
-                        <div className='content-wrapper right-wrapper'>
-                            <MediaQuery minWidth={1025}>
-                                <h4><a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >Thrift</a></h4>
-                                <h5>Financial Tracking App</h5>
-                            </MediaQuery>
-                            <p>Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented using <a href='https://www.chartjs.org/' target='_blank' rel='noopener noreferrer' >Chart.js</a>. </p>
-                            <div className="project-tech-wrapper">
-                                <p>PostgreSQL</p>
-                                <p>Express.js</p>
-                                <p>React.js</p>
-                                <p>Node.js</p>
-                            </div>
-                            <div className="project-links-wrapper">
-                                <a href='https://github.com/siemenjm/backend-thrift' target='_blank' rel='noopener noreferrer' >
-                                    <FaGithub className='project-link-icon' />
-                                </a>
-                                <a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >
-                                    <FaExternalLinkAlt className='project-link-icon' />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="project-card reverse">
-                        <MediaQuery maxWidth={1024}>
-                            <div className="content-wrapper">
-                                <h4><a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >Sleeper Sheets</a></h4>
-                                <h5>Fantasy Football Data App</h5>
-                            </div>
-                        </MediaQuery>
-                        <div className='image-wrapper'>
-                            <a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >
-                                <img src={sleeperSheetsScreenshot} alt="Sleeper Sheets screeshot showing matchup page" className="project-screenshot" />
-                            </a>
-                        </div>
-                        <div className='content-wrapper left-wrapper'>
-                            <MediaQuery minWidth={1025}>
-                                <h4><a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >Sleeper Sheets</a></h4>
-                                <h5>Fantasy Football Data App</h5>
-                            </MediaQuery>
-                            <p>Sleeper Sheets is a full-stack MERN fantasy football application that consumes the Sleeper API to grab a user’s Sleeper teams, leagues, stats, projections, etc. and display that data to the user.</p>
-                            <div className="project-tech-wrapper">
-                                <p>MongoDB</p>
-                                <p>Express.js</p>
-                                <p>React.js</p>
-                                <p>Node.js</p>
-                            </div>
-                            <div className="project-links-wrapper">
-                                <a href='https://github.com/siemenjm/frontend-sleeper-sheets' target='_blank' rel='noopener noreferrer' >
-                                    <FaGithub className='project-link-icon' />
-                                </a>
-                                <a href='https://funny-dango-f7628e.netlify.app/' target='_blank' rel='noopener noreferrer' >
-                                    <FaExternalLinkAlt className='project-link-icon' />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    {allProjects}
                 </div>
             </section>
         </div>

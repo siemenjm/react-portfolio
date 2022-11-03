@@ -7,7 +7,7 @@ const projectData = [
         shortDesc: 'Financial Tracking App',
         screenshot: thriftScreenshot,
         screenshotAlt: 'Thrift screenshot showing a financial graph',
-        longDesc: 'Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented using <a href=\'https://www.chartjs.org/\' target=\'_blank\' rel=\'noopener noreferrer\' >Chart.js</a>.',
+        longDesc: 'Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented using Chart.js.',
         projectTech: [
             'PostgreSQL',
             'Express.js',
