@@ -1,5 +1,5 @@
-.about-me-section > .upper-wrapper {
-    display: flex;
+.about-me-section  {
+    flex-direction: row;
     gap: 7.5rem;
     align-items: center;
 }
@@ -50,10 +50,9 @@
 
 /* ----- Mobile View ----- */
 @media (max-width: 767px) {
-    .about-me-section > .upper-wrapper {
+    .about-me-section {
         flex-direction: column;
         gap: 2rem;
-
     }
 
     .about-me-section .content-wrapper {
