@@ -122,3 +122,46 @@
 .project-link-icon:hover {
     fill: white;
 }
+
+
+/* ----- Mobile View ----- */
+@media (max-width: 1024px) {
+    .projects-section  {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .projects-section .first-letter {
+        padding-top: 0;
+    }
+    
+    .projects-section .eigth-letter {
+        padding-bottom: 0;
+    }
+
+    .project-card, .project-card.reverse {
+        flex-direction: column;
+    }
+
+    .project-card > div {
+        width: 100%;
+    }
+
+    .project-card > .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .project-card > .right-wrapper, .project-card > .left-wrapper {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .project-card > .content-wrapper > p {
+        width: 100%;
+        padding: 1rem;
+    }
+}
