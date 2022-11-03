@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/AboutMeSection.css';
 import '../styles/HeroSection.css';
+import '../styles/ProjectsSection.css';
 import '../styles/SectionHeader.css';
 import '../styles/TechStackSection.css';
 import headshot from '../assets/headshot.png';
@@ -17,6 +18,7 @@ import wordpressLogo from '../assets/WordPress_logo.svg';
 import thriftScreenshot from '../assets/Thrift_screenshot.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
     return (
@@ -130,12 +132,15 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="content-wrapper">
                     <h3>Some Cool Things I've Made</h3>
                     <div className="project-card">
-                        <div>
-                            <img src={thriftScreenshot} alt="Thrift screeshot showing a graph" className="project-screenshot" />
+                        <div className='image-wrapper'>
+                            <a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >
+                                <img src={thriftScreenshot} alt="Thrift screeshot showing a graph" className="project-screenshot" />
+                            </a>
                         </div>
-                        <div>
-                            <h4>Thrift - Financial Tracking App</h4>
-                            <p>Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented. </p>
+                        <div className='content-wrapper right-wrapper'>
+                            <h4><a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >Thrift</a></h4>
+                            <h5>Financial Tracking App</h5>
+                            <p>Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented using <a href='https://www.chartjs.org/' target='_blank' rel='noopener noreferrer' >Chart.js</a>. </p>
                             <div className="project-tech-wrapper">
                                 <p>PostgreSQL</p>
                                 <p>Express.js</p>
@@ -143,12 +148,12 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                                 <p>Node.js</p>
                             </div>
                             <div className="project-links-wrapper">
-                                <Link to={'https://github.com/siemenjm/backend-thrift'} >
-                                    <img src="" alt="Github icon" className="project-link-logo" />
-                                </Link>
-                                <Link to={'https://thrift-financial.netlify.app/'} >
-                                    <img src="" alt="Leave-page icon" className="project-link-logo" />
-                                </Link>
+                                <a href='https://github.com/siemenjm/backend-thrift' target='_blank' rel='noopener noreferrer' >
+                                    <FaGithub className='project-link-icon' />
+                                </a>
+                                <a href='https://thrift-financial.netlify.app/' target='_blank' rel='noopener noreferrer' >
+                                    <FaExternalLinkAlt className='project-link-icon' />
+                                </a>
                             </div>
                         </div>
                     </div>
