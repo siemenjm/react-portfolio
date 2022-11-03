@@ -68,7 +68,7 @@
 
 
 /* ----- Mobile View ----- */
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
     .hero-section > .section-header-wrapper {
         position: relative;
         align-self: center;
