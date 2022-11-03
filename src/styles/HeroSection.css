@@ -8,8 +8,9 @@
     align-items: center;
 }
 
-.header-letter {
+.hero-section > .section-header-wrapper > .header-letter {
     font-size: 5rem;
+    font-weight: 600;
     line-height: 5rem;
 }
 

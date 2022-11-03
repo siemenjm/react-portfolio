@@ -1,6 +1,6 @@
 .about-me-section > .upper-wrapper {
     display: flex;
-    gap: 5rem;
+    gap: 7.5rem;
     align-items: center;
 }
 
@@ -19,8 +19,16 @@
     color: white;
 }
 
+.about-me-section .first-letter {
+    padding-top: 1rem;
+}
+
 .about-me-section .sixth-letter {
-    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+.about-me-section .seventh-letter {
+    padding-bottom: 1rem;
 }
 
 .headshot-wrapper {
@@ -61,8 +69,18 @@
         line-height: 5rem;
     }
 
+    .about-me-section .first-letter {
+        padding-top: 0;
+        padding-left: 1rem;
+    }
+
     .about-me-section .sixth-letter {
-        margin-top: 0;
-        margin-left: 1rem;
+        padding-top: 0;
+        padding-left: 1rem;
+    }
+
+    .about-me-section .seventh-letter {
+        padding-bottom: 0;
+        padding-right: 1rem;
     }
 }

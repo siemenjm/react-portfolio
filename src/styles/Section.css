@@ -1,6 +1,37 @@
 .section-header-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     animation: floatingAnimation 2s ease;
     animation-iteration-count: infinite;
+}
+
+/* .section-header-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    display: block;
+    background-color: var(--accent);
+    width: 2px;
+    height: 100%;
+} */
+
+.header-letter {
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 3rem;
+    background-color: var(--primary-darkest);
+    z-index: 10;
+}
+
+.background-line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--accent);
 }
 
 @keyframes floatingAnimation {
@@ -19,8 +50,17 @@
 /* ----- Mobile View ----- */
 @media (max-width: 767px) {
     .section-header-wrapper {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
+    }
+
+    .background-line {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 2px;
     }
 }

@@ -35,6 +35,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                         <h2 className='header-letter fifth-letter color-accent'>t</h2>
                         <h2 className='header-letter sixth-letter color-accent'>M</h2>
                         <h2 className='header-letter seventh-letter color-accent'>e</h2>
+                        <div className="background-line"></div>
                     </div>
                     <div className="content-wrapper">
                         <h3>I'm a freelance full stack software developer working remotely out of Flint, Michigan.</h3>
