@@ -101,6 +101,7 @@
     border-left: 1px solid var(--accent);
     border-right: 1px solid var(--accent);
     margin-bottom: 1rem;
+    white-space: nowrap;
 }
 
 .project-card > .content-wrapper > .project-tech-wrapper p:first-child {
