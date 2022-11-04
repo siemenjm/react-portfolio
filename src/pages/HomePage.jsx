@@ -116,7 +116,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h2 className='header-letter fifth-letter color-accent'>S</h2>
                     <h2 className='header-letter sixth-letter color-accent'>t</h2>
                     <h2 className='header-letter seventh-letter color-accent'>a</h2>
-                    <h2 className='header-letter eigth-letter color-accent'>c</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>c</h2>
                     <h2 className='header-letter ninth-letter color-accent'>k</h2>
                     <div className="background-line"></div>
                 </div>
@@ -130,12 +130,31 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h2 className='header-letter fifth-letter color-accent'>e</h2>
                     <h2 className='header-letter sixth-letter color-accent'>c</h2>
                     <h2 className='header-letter seventh-letter color-accent'>t</h2>
-                    <h2 className='header-letter eigth-letter color-accent'>s</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>s</h2>
                     <div className="background-line"></div>
                 </div>
                 <div className="content-wrapper">
                     <h3>Some Cool Things I've Made</h3>
                     {allProjects}
+                </div>
+            </section>
+            <section className="client-work-section">
+                <div className="content-wrapper">
+                    <h3>Freelance Work Completed for Clients</h3>
+                    {allProjects}
+                </div>
+                <div className="section-header-wrapper">
+                    <h2 className='header-letter first-letter color-accent'>C</h2>
+                    <h2 className='header-letter second-letter color-accent'>l</h2>
+                    <h2 className='header-letter third-letter color-accent'>i</h2>
+                    <h2 className='header-letter fourth-letter color-accent'>e</h2>
+                    <h2 className='header-letter fifth-letter color-accent'>n</h2>
+                    <h2 className='header-letter sixth-letter color-accent'>t</h2>
+                    <h2 className='header-letter seventh-letter color-accent'>W</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>o</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>r</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>k</h2>
+                    <div className="background-line"></div>
                 </div>
             </section>
         </div>
