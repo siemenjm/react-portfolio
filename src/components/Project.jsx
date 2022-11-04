@@ -37,9 +37,9 @@ export default function Project({ project, projectIndex }) {
                     {allTech}
                 </div>
                 <div className="project-links-wrapper">
-                    <a href={project.githubLink} target='_blank' rel='noopener noreferrer' >
+                    { project.githubLink ? <a href={project.githubLink} target='_blank' rel='noopener noreferrer' >
                         <FaGithub className='project-link-icon' />
-                    </a>
+                    </a> : <></>}
                     <a href={project.deployedLink} target='_blank' rel='noopener noreferrer' >
                         <FaExternalLinkAlt className='project-link-icon' />
                     </a>
