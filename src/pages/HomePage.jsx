@@ -152,8 +152,8 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h2 className='header-letter sixth-letter color-accent'>t</h2>
                     <h2 className='header-letter seventh-letter color-accent'>W</h2>
                     <h2 className='header-letter eighth-letter color-accent'>o</h2>
-                    <h2 className='header-letter eighth-letter color-accent'>r</h2>
-                    <h2 className='header-letter eighth-letter color-accent'>k</h2>
+                    <h2 className='header-letter ninth-letter color-accent'>r</h2>
+                    <h2 className='header-letter tenth-letter color-accent'>k</h2>
                     <div className="background-line"></div>
                 </div>
             </section>
