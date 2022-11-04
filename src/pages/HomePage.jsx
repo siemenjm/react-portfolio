@@ -18,11 +18,16 @@ import wordpressLogo from '../assets/WordPress_logo.svg';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
 import projectData from '../data/project_data';
+import clientWorkData from '../data/client_work_data';
 import Project from '../components/Project';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
     const allProjects = projectData.map((project, index) => {
         return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;           
+    });
+
+    const allClientWork = clientWorkData.map((project, index) => {
+        return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;  
     });
 
     return (
@@ -141,7 +146,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
             <section className="client-work-section">
                 <div className="content-wrapper">
                     <h3>Freelance Work Completed for Clients</h3>
-                    {allProjects}
+                    {allClientWork}
                 </div>
                 <div className="section-header-wrapper">
                     <h2 className='header-letter first-letter color-accent'>C</h2>
