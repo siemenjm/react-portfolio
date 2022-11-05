@@ -4,6 +4,7 @@ import '../styles/HeroSection.css';
 import '../styles/ProjectsSection.css';
 import '../styles/SectionHeader.css';
 import '../styles/TechStackSection.css';
+import '../styles/TestimonialSection.css';
 import headshot from '../assets/headshot.png';
 import htmlLogo from '../assets/HTML_logo.png';
 import cssLogo from '../assets/css_logo.png';
@@ -15,6 +16,7 @@ import expressLogo from '../assets/Expressjs.png';
 import mongoLogo from '../assets/MongoDB_Logo.svg';
 import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import wordpressLogo from '../assets/WordPress_logo.svg';
+import allSportsPhotographyLogo from '../assets/All_Sports_Photography_logo.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
 import projectData from '../data/project_data';
@@ -160,6 +162,36 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h2 className='header-letter ninth-letter color-accent'>r</h2>
                     <h2 className='header-letter tenth-letter color-accent'>k</h2>
                     <div className="background-line"></div>
+                </div>
+            </section>
+            <section className="testimonial-section">
+                <div className="section-header-wrapper">
+                    <h2 className='header-letter first-letter color-accent'>T</h2>
+                    <h2 className='header-letter second-letter color-accent'>e</h2>
+                    <h2 className='header-letter third-letter color-accent'>s</h2>
+                    <h2 className='header-letter fourth-letter color-accent'>t</h2>
+                    <h2 className='header-letter fifth-letter color-accent'>i</h2>
+                    <h2 className='header-letter sixth-letter color-accent'>m</h2>
+                    <h2 className='header-letter seventh-letter color-accent'>o</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>n</h2>
+                    <h2 className='header-letter ninth-letter color-accent'>i</h2>
+                    <h2 className='header-letter tenth-letter color-accent'>a</h2>
+                    <h2 className='header-letter eleventh-letter color-accent'>l</h2>
+                    <h2 className='header-letter eleventh-letter color-accent'>s</h2>
+                    <div className="background-line"></div>
+                </div>
+                <div className="content-wrapper">
+                    <h3>What do people have to say about me?</h3>
+                    <div className="testimonial-card">
+                        <p className="testimonial"> "Jared delivered amazing results on the project and I enjoyed working with him. His communication was top-notch, he met all deadlines, and his skills were excellent. I enjoyed working with Jared and will likely have additional projects for him in the future."</p>
+                        <div className="testimonial-author-wrapper">
+                            <img src={allSportsPhotographyLogo} alt="All Sports Photography logo" className="author-image" />
+                            <div>
+                                <p className="author-name">Don Montague</p>
+                                <a href="https://allsportsphotography-fl.com/" target='_blank' rel='noopener noreferrer' className="author-business">All Sports Photography</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

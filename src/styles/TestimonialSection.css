@@ -1,0 +1,43 @@
+.testimonial-section  {
+    flex-direction: row;
+    gap: 7.5rem;
+    align-items: center;
+}
+
+.testimonial-section > .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.testimonial {
+    font-style: italic;
+    text-align: center;
+}
+
+.testimonial-author-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-image {
+    max-width: 75px;
+}
+
+.author-name, .author-business {
+    font-weight: bold;
+    color: var(--primary-light);
+}
+
+.author-business:hover {
+    color: white;
+}
