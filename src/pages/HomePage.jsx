@@ -183,7 +183,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h2 className='header-letter ninth-letter color-accent'>i</h2>
                     <h2 className='header-letter tenth-letter color-accent'>a</h2>
                     <h2 className='header-letter eleventh-letter color-accent'>l</h2>
-                    <h2 className='header-letter eleventh-letter color-accent'>s</h2>
+                    <h2 className='header-letter twelfth-letter color-accent'>s</h2>
                     <div className="background-line"></div>
                 </div>
                 <div className="content-wrapper">

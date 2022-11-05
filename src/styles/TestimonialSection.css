@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+.testimonial-section .first-letter {
+    padding-top: 1rem;
+}
+
+.testimonial-section .twelfth-letter {
+    padding-bottom: 1rem;
+}
+
 .testimonial-section > .content-wrapper {
     display: flex;
     flex-direction: column;
