@@ -19,9 +19,11 @@ import wordpressLogo from '../assets/WordPress_logo.svg';
 import allSportsPhotographyLogo from '../assets/All_Sports_Photography_logo.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
-import projectData from '../data/project_data';
 import clientWorkData from '../data/client_work_data';
+import projectData from '../data/project_data';
+import testimonialData from '../data/testimonial_data';
 import Project from '../components/Project';
+import Testimonial from '../components/Testimonial';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
     const allProjects = projectData.map((project, index) => {
@@ -30,6 +32,10 @@ export default function HomePage({ currentPage, setCurrentPage }) {
 
     const allClientWork = clientWorkData.map((project, index) => {
         return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;  
+    });
+
+    const allTestimonials = testimonialData.map((testimonial) => {
+        return <Testimonial testimonial={testimonial} key={testimonial.author} />
     });
 
     return (
@@ -182,16 +188,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 </div>
                 <div className="content-wrapper">
                     <h3>What do people have to say about me?</h3>
-                    <div className="testimonial-card">
-                        <p className="testimonial"> "Jared delivered amazing results on the project and I enjoyed working with him. His communication was top-notch, he met all deadlines, and his skills were excellent. I enjoyed working with Jared and will likely have additional projects for him in the future."</p>
-                        <div className="testimonial-author-wrapper">
-                            <img src={allSportsPhotographyLogo} alt="All Sports Photography logo" className="author-image" />
-                            <div>
-                                <p className="author-name">Don Montague</p>
-                                <a href="https://allsportsphotography-fl.com/" target='_blank' rel='noopener noreferrer' className="author-business">All Sports Photography</a>
-                            </div>
-                        </div>
-                    </div>
+                    {allTestimonials}
                 </div>
             </section>
         </div>
