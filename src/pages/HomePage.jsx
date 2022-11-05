@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/AboutMeSection.css';
 import '../styles/HeroSection.css';
+import '../styles/ProjectsSection.css';
 import '../styles/SectionHeader.css';
 import '../styles/TechStackSection.css';
 import headshot from '../assets/headshot.png';
@@ -16,8 +17,19 @@ import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import wordpressLogo from '../assets/WordPress_logo.svg';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
+import projectData from '../data/project_data';
+import clientWorkData from '../data/client_work_data';
+import Project from '../components/Project';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
+    const allProjects = projectData.map((project, index) => {
+        return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;           
+    });
+
+    const allClientWork = clientWorkData.map((project, index) => {
+        return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;  
+    });
+
     return (
         <div className='page'>
             <section className="hero-section">
@@ -109,8 +121,44 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h2 className='header-letter fifth-letter color-accent'>S</h2>
                     <h2 className='header-letter sixth-letter color-accent'>t</h2>
                     <h2 className='header-letter seventh-letter color-accent'>a</h2>
-                    <h2 className='header-letter eigth-letter color-accent'>c</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>c</h2>
                     <h2 className='header-letter ninth-letter color-accent'>k</h2>
+                    <div className="background-line"></div>
+                </div>
+            </section>
+            <section className="projects-section">
+                <div className="section-header-wrapper">
+                    <h2 className='header-letter first-letter color-accent'>P</h2>
+                    <h2 className='header-letter second-letter color-accent'>r</h2>
+                    <h2 className='header-letter third-letter color-accent'>o</h2>
+                    <h2 className='header-letter fourth-letter color-accent'>j</h2>
+                    <h2 className='header-letter fifth-letter color-accent'>e</h2>
+                    <h2 className='header-letter sixth-letter color-accent'>c</h2>
+                    <h2 className='header-letter seventh-letter color-accent'>t</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>s</h2>
+                    <div className="background-line"></div>
+                </div>
+                <div className="content-wrapper">
+                    <h3>Some Cool Things I've Made</h3>
+                    {allProjects}
+                </div>
+            </section>
+            <section className="client-work-section">
+                <div className="content-wrapper">
+                    <h3>Freelance Work Completed for Clients</h3>
+                    {allClientWork}
+                </div>
+                <div className="section-header-wrapper">
+                    <h2 className='header-letter first-letter color-accent'>C</h2>
+                    <h2 className='header-letter second-letter color-accent'>l</h2>
+                    <h2 className='header-letter third-letter color-accent'>i</h2>
+                    <h2 className='header-letter fourth-letter color-accent'>e</h2>
+                    <h2 className='header-letter fifth-letter color-accent'>n</h2>
+                    <h2 className='header-letter sixth-letter color-accent'>t</h2>
+                    <h2 className='header-letter seventh-letter color-accent'>W</h2>
+                    <h2 className='header-letter eighth-letter color-accent'>o</h2>
+                    <h2 className='header-letter ninth-letter color-accent'>r</h2>
+                    <h2 className='header-letter tenth-letter color-accent'>k</h2>
                     <div className="background-line"></div>
                 </div>
             </section>
