@@ -34,8 +34,8 @@ export default function HomePage({ currentPage, setCurrentPage }) {
         return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;  
     });
 
-    const allTestimonials = testimonialData.map((testimonial) => {
-        return <Testimonial testimonial={testimonial} key={testimonial.author} />
+    const allTestimonials = testimonialData.map((testimonial, index) => {
+        return <Testimonial testimonial={testimonial} key={`${testimonial.author}-${index}`} />
     });
 
     return (
