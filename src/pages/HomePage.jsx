@@ -24,6 +24,7 @@ import projectData from '../data/project_data';
 import testimonialData from '../data/testimonial_data';
 import Project from '../components/Project';
 import Testimonial from '../components/Testimonial';
+import Carousel from '../components/Carousel';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
     const allProjects = projectData.map((project, index) => {
@@ -32,10 +33,6 @@ export default function HomePage({ currentPage, setCurrentPage }) {
 
     const allClientWork = clientWorkData.map((project, index) => {
         return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;  
-    });
-
-    const allTestimonials = testimonialData.map((testimonial, index) => {
-        return <Testimonial testimonial={testimonial} key={`${testimonial.author}-${index}`} />
     });
 
     return (
@@ -188,7 +185,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 </div>
                 <div className="content-wrapper">
                     <h3>What do people have to say about me?</h3>
-                    {allTestimonials}
+                    <Carousel />
                 </div>
             </section>
         </div>
