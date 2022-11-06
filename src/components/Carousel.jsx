@@ -23,10 +23,6 @@ export default function Carousel() {
         }
     }
 
-    // const allTestimonials = testimonialData.map((testimonial, index) => {
-    //     return <Testimonial testimonial={testimonial} key={`${testimonial.author}-${index}`} />
-    // });
-
     return (
         <div className='carousel'>
             <button onClick={handleLeftClick} className="carousel-button"><FaChevronLeft /></button>
