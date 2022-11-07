@@ -7,7 +7,7 @@
 }
 
 .testimonial-container {
-    max-width: 100vw;
+    max-width: calc(100vw - 25rem);
     display: flex;
     overflow-x: visible;
     animation: cycleCarousel 20s ease infinite;
@@ -37,5 +37,10 @@
     }
     100% {
         transform: translateX(0);
+    }
+}
+@media (max-width: 1024px) {
+    .testimonial-container {
+        max-width: calc(100vw - 4rem);
     }
 }

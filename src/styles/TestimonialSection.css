@@ -20,6 +20,7 @@
 }
 
 .testimonial-card {
+    max-width: calc(100vw - 25rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,5 +69,19 @@
     .testimonial-section .twelfth-letter {
         padding-bottom: 0;
         padding-right: 1rem;
+    }
+
+    .testimonial-section > .content-wrapper {
+        width: 100%;
+    }
+
+    .testimonial-card {
+        max-width: calc(100vw - 4rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 2rem;
+        flex: 0 0 100%;
     }
 }
