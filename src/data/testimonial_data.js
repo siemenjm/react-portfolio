@@ -30,7 +30,7 @@ const testimonialData = [
     },
     {
         author: 'Eric Fithian',
-        authorBusiness: 'Lead Instructor at General Assembly',
+        authorBusiness: 'Lead Instructor, General Assembly',
         authorImage: generalAssemblyLogo,
         authorImageAlt: 'General Assembly logo',
         testimonial: '"Jared is an incredibly bright and talented student whom I had the pleasure of working with while he was a student here at General Assembly. His hard work and dedication during the course have allowed him to successfully master all of the challenging units this course offers. No matter what the topic is, and whether or not he has had prior experience with it, he always ensures to successfully completes all of his work on time and then adds to the MVP for deliverables and projects by going well above and beyond with stretch features to really add to his overall knowledge of the technologies."',

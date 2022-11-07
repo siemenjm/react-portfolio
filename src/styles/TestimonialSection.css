@@ -20,7 +20,6 @@
 }
 
 .testimonial-card {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,4 +50,23 @@
 
 .author-business:hover {
     color: white;
+}
+
+/* ----- Mobile View ----- */
+@media (max-width: 1024px) {
+    .testimonial-section  {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .testimonial-section .first-letter {
+        padding-top: 0;
+        padding-left: 1rem;
+    }
+    
+    .testimonial-section .twelfth-letter {
+        padding-bottom: 0;
+        padding-right: 1rem;
+    }
 }
