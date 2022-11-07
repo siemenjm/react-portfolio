@@ -185,14 +185,6 @@
         padding: 1rem;
     }
 
-    .project-screenshot {
-        width: 75%;
-        border: 3px solid var(--primary-light);
-        border-radius: 5px;
-        box-shadow: 1rem 1rem var(--accent);
-        transition: box-shadow 0.25s ease;
-    }
-
     .project-card > .content-wrapper > .project-tech-wrapper > * {
         font-size: 0.75rem;
     }
