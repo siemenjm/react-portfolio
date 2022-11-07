@@ -6,21 +6,6 @@
     overflow: hidden;
 }
 
-.carousel-button {
-    background-color: transparent;
-    border: none;
-}
-
-.carousel-button > svg {
-    fill: var(--accent);
-    height: 2rem;
-    width: 2rem;
-}
-
-.carousel-button > svg:hover {
-    fill: white;
-}
-
 .testimonial-container {
     display: flex;
     overflow-x: visible;
