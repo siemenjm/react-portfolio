@@ -184,4 +184,8 @@
         width: 100%;
         padding: 1rem;
     }
+
+    .project-card > .content-wrapper > .project-tech-wrapper > * {
+        font-size: 0.75rem;
+    }
 }

@@ -1,0 +1,46 @@
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.testimonial-container {
+    max-width: calc(100vw - 25rem);
+    display: flex;
+    overflow-x: visible;
+    animation: cycleCarousel 20s ease infinite;
+}
+
+@keyframes cycleCarousel {
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    70% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+    95% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 1024px) {
+    .testimonial-container {
+        max-width: calc(100vw - 4rem);
+    }
+}
