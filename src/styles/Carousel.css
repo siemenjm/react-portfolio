@@ -2,12 +2,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 3rem;
     overflow: hidden;
 }
 
 .testimonial-container {
-    max-width: calc(100vw - 25rem);
+    max-width: 100%;
     display: flex;
     overflow-x: visible;
     animation: cycleCarousel 20s ease infinite;

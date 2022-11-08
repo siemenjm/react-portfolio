@@ -1,26 +1,22 @@
 .testimonial-section  {
-    flex-direction: row;
-    gap: 7.5rem;
-    align-items: center;
-}
-
-.testimonial-section .first-letter {
-    padding-top: 1rem;
-}
-
-.testimonial-section .twelfth-letter {
-    padding-bottom: 1rem;
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+    justify-content: flex-start;
 }
 
 .testimonial-section > .content-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding-top: 4rem;
+    padding-left: 3rem;
 }
 
 .testimonial-card {
-    max-width: calc(100vw - 25rem);
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,26 +53,16 @@
 @media (max-width: 1024px) {
     .testimonial-section  {
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
         text-align: center;
     }
 
-    .testimonial-section .first-letter {
-        padding-top: 0;
-        padding-left: 1rem;
+    .testimonial-section > .content-wrapper {
+        padding-left: 0;
     }
     
-    .testimonial-section .twelfth-letter {
-        padding-bottom: 0;
-        padding-right: 1rem;
-    }
-
-    .testimonial-section > .content-wrapper {
-        width: 100%;
-    }
-
     .testimonial-card {
-        max-width: calc(100vw - 4rem);
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;

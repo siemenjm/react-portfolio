@@ -160,27 +160,21 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     {allClientWork}
                 </div>
             </section>
-            {/* <section className="testimonial-section">
-                <div className="section-header-wrapper">
-                    <h2 className='header-letter first-letter color-accent'>T</h2>
-                    <h2 className='header-letter second-letter color-accent'>e</h2>
-                    <h2 className='header-letter third-letter color-accent'>s</h2>
-                    <h2 className='header-letter fourth-letter color-accent'>t</h2>
-                    <h2 className='header-letter fifth-letter color-accent'>i</h2>
-                    <h2 className='header-letter sixth-letter color-accent'>m</h2>
-                    <h2 className='header-letter seventh-letter color-accent'>o</h2>
-                    <h2 className='header-letter eighth-letter color-accent'>n</h2>
-                    <h2 className='header-letter ninth-letter color-accent'>i</h2>
-                    <h2 className='header-letter tenth-letter color-accent'>a</h2>
-                    <h2 className='header-letter eleventh-letter color-accent'>l</h2>
-                    <h2 className='header-letter twelfth-letter color-accent'>s</h2>
-                    <div className="background-line"></div>
+            <section className="testimonial-section">
+            <div className="line-effects">
+                    <div className="line-effect-container horizontal">
+                        <div className="horizontal-line-effect"></div>
+                        <h2 className="line-header color-accent">Testimonials</h2>
+                    </div>
+                    <div className="line-effect-container vertical">
+                        <div className="vertical-line-effect"></div>
+                    </div>
                 </div>
                 <div className="content-wrapper">
                     <h3>What do people have to say about me?</h3>
                     <Carousel />
                 </div>
-            </section> */}
+            </section>
         </div>
     );
 }
