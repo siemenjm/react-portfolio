@@ -78,6 +78,15 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 </div>
             </section>
             <section className="tech-stack-section">
+                <div className="line-effects">
+                    <div className="line-effect-container horizontal">
+                        <div className="horizontal-line-effect"></div>
+                        <h2 className="test-header color-accent">Tech Stack</h2>
+                    </div>
+                    <div className="line-effect-container vertical">
+                        <div className="vertical-line-effect"></div>
+                    </div>
+                </div>
                 <div className="content-wrapper">
                     <div className="tech-wrapper">
                         <img src={htmlLogo} alt="HTML logo" />
@@ -119,18 +128,6 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                         <img src={wordpressLogo} alt="WordPress logo" className='light-background' />
                         <p>WordPress</p>
                     </div>
-                </div>
-                <div className="section-header-wrapper">
-                    <h2 className='header-letter first-letter color-accent'>T</h2>
-                    <h2 className='header-letter second-letter color-accent'>e</h2>
-                    <h2 className='header-letter third-letter color-accent'>c</h2>
-                    <h2 className='header-letter fourth-letter color-accent'>h</h2>
-                    <h2 className='header-letter fifth-letter color-accent'>S</h2>
-                    <h2 className='header-letter sixth-letter color-accent'>t</h2>
-                    <h2 className='header-letter seventh-letter color-accent'>a</h2>
-                    <h2 className='header-letter eighth-letter color-accent'>c</h2>
-                    <h2 className='header-letter ninth-letter color-accent'>k</h2>
-                    <div className="background-line"></div>
                 </div>
             </section>
             <section className="projects-section">
