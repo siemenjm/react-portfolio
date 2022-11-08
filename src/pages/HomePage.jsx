@@ -55,25 +55,26 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 </div>
             </section>
             <section className="about-me-section">
-                <div className="section-header-wrapper">
-                    <h2 className='header-letter first-letter color-accent'>A</h2>
-                    <h2 className='header-letter second-letter color-accent'>b</h2>
-                    <h2 className='header-letter third-letter color-accent'>o</h2>
-                    <h2 className='header-letter fourth-letter color-accent'>u</h2>
-                    <h2 className='header-letter fifth-letter color-accent'>t</h2>
-                    <h2 className='header-letter sixth-letter color-accent'>M</h2>
-                    <h2 className='header-letter seventh-letter color-accent'>e</h2>
-                    <div className="background-line"></div>
+                <div className="line-effects">
+                    <div className="line-effect-container horizontal">
+                        <div className="horizontal-line-effect"></div>
+                        <h2 className="test-header color-accent">About Me</h2>
+                    </div>
+                    <div className="line-effect-container vertical">
+                        <div className="vertical-line-effect"></div>
+                    </div>
                 </div>
                 <div className="content-wrapper">
-                    <h3>I'm a freelance full stack software developer working remotely out of Flint, Michigan.</h3>
-                    <p>Hello, I’m Jared! I love, love, love designing and building anything that runs on code, especially if it lives on the internet. My passion for web development started in early 2020 when I was laid off due to COVID, was stuck in lockdown, and needed something to do. I found some coding challenges online and haven’t looked back!</p>
-                    <p>Since discovering this passion, I have started a freelance web design and development business, launched several websites out into the wild, and completed a software engineering bootcamp. My main focus now is leveraging the technical skills that I learned in the bootcamp in tandem with the communication and customer facing skills that I learned freelancing to deliver more and more complex products to my clients.</p>
-                    <p>Feel free to take a look at my <Link to={'/resume'}>resume</Link>!</p>
-                </div>
-                <div className="headshot-wrapper">
-                    <img src={headshot} alt="Jared Siemen headshot image" />
-                    <div className="headshot-background"></div>
+                    <div className="content-wrapper">
+                        <h4>I'm a freelance full stack software developer working remotely out of Flint, Michigan.</h4>
+                        <p>Hello, I’m Jared! I love, love, love designing and building anything that runs on code, especially if it lives on the internet. My passion for web development started in early 2020 when I was laid off due to COVID, was stuck in lockdown, and needed something to do. I found some coding challenges online and haven’t looked back!</p>
+                        <p>Since discovering this passion, I have started a freelance web design and development business, launched several websites out into the wild, and completed a software engineering bootcamp. My main focus now is leveraging the technical skills that I learned in the bootcamp in tandem with the communication and customer facing skills that I learned freelancing to deliver more and more complex products to my clients.</p>
+                        <p>Feel free to take a look at my <Link to={'/resume'}>resume</Link>!</p>
+                    </div>
+                    <div className="headshot-wrapper">
+                        <img src={headshot} alt="Jared Siemen headshot image" />
+                        <div className="headshot-background"></div>
+                    </div>
                 </div>
             </section>
             <section className="tech-stack-section">
@@ -168,7 +169,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <div className="background-line"></div>
                 </div>
             </section>
-            <section className="testimonial-section">
+            {/* <section className="testimonial-section">
                 <div className="section-header-wrapper">
                     <h2 className='header-letter first-letter color-accent'>T</h2>
                     <h2 className='header-letter second-letter color-accent'>e</h2>
@@ -188,7 +189,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h3>What do people have to say about me?</h3>
                     <Carousel />
                 </div>
-            </section>
+            </section> */}
             <section className="test-section">
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
@@ -199,8 +200,6 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                         <div className="vertical-line-effect"></div>
                     </div>
                 </div>
-                {/* <div className="test-section-header">
-                </div> */}
                 <div className="content-wrapper">
                     <h4>Freelance Work Completed for Clients</h4>
                     {allClientWork}

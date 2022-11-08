@@ -1,10 +1,19 @@
 .about-me-section  {
-    flex-direction: row;
-    gap: 7.5rem;
-    align-items: center;
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+    justify-content: flex-start;
 }
 
-.about-me-section .content-wrapper {
+.about-me-section > .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    padding-top: 4rem;
+    padding-left: 3rem;
+}
+
+.about-me-section > .content-wrapper > .content-wrapper {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -17,18 +26,6 @@
 
 .about-me-section .content-wrapper a:hover {
     color: white;
-}
-
-.about-me-section .first-letter {
-    padding-top: 1rem;
-}
-
-.about-me-section .sixth-letter {
-    padding-top: 1.5rem;
-}
-
-.about-me-section .seventh-letter {
-    padding-bottom: 1rem;
 }
 
 .headshot-wrapper {
@@ -50,36 +47,24 @@
 
 /* ----- Mobile View ----- */
 @media (max-width: 767px) {
-    .about-me-section {
+    .about-me-section > .content-wrapper {
         flex-direction: column;
+        align-items: center;
         gap: 2rem;
+        padding-left: 0;
+        text-align: center;
     }
 
-    .about-me-section .content-wrapper {
+    .about-me-section > .content-wrapper > .content-wrapper {
         width: 100%;
+        text-align: left;
+    }
+
+    .about-me-section > .content-wrapper > .content-wrapper > h4 {
+        text-align: center;
     }
 
     .headshot-wrapper {
         width: 75%;
-    }
-
-    .about-me-section .header-letter {
-        font-size: 3rem;
-        line-height: 5rem;
-    }
-
-    .about-me-section .first-letter {
-        padding-top: 0;
-        padding-left: 1rem;
-    }
-
-    .about-me-section .sixth-letter {
-        padding-top: 0;
-        padding-left: 1rem;
-    }
-
-    .about-me-section .seventh-letter {
-        padding-bottom: 0;
-        padding-right: 1rem;
     }
 }

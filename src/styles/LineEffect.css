@@ -69,7 +69,10 @@
 }
 
 .test-section > .content-wrapper {
-    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 4rem;
     padding-left: 5rem;
 }
 
@@ -88,5 +91,26 @@
     }
     100% {
         transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .test-section > .content-wrapper {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .test-header {
+        width: fit-content;
+        margin: 0;
+        align-self: center;
+    }
+
+    .line-effects {
+        margin: 1rem;
+    }
+
+    .line-effect-container.vertical {
+        display: none;
     }
 }
