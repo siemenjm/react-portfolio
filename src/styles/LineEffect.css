@@ -29,7 +29,17 @@
     width: 200%;
     height: 2px;
     background-image: linear-gradient(90deg, var(--accent), var(--primary-dark), var(--accent), var(--primary-dark), var(--accent));
+}
+
+.horizontal-line-effect.left {
     animation: horizLineEffectPulse 2s linear;
+    animation-iteration-count: infinite;
+}
+
+.horizontal-line-effect.right {
+    left: 0;
+    right: -100%;
+    animation: reverseHorizLineEffectPulse 2s linear;
     animation-iteration-count: infinite;
 }
 
@@ -38,6 +48,10 @@
     top: calc(2.441rem / 2);
     height: 100%;
     overflow: hidden;
+}
+
+.line-effect-container.vertical.right {
+    right: 0;
 }
 
 .vertical-line-effect {
@@ -54,6 +68,15 @@
     }
     100% {
         transform: translateX(50%);
+    }
+}
+
+@keyframes reverseHorizLineEffectPulse {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }
 
