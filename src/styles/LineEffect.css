@@ -7,6 +7,10 @@
     padding: 0 1rem;
 }
 
+.line-header.right {
+    margin: 0 2rem 0 auto;
+}
+
 .line-effects {
     position: absolute;
     margin: 5rem;
@@ -94,6 +98,10 @@
         width: fit-content;
         margin: 0;
         align-self: center;
+    }
+
+    .line-header.right {
+        margin: 0;
     }
 
     .line-effects {

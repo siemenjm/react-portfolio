@@ -10,7 +10,14 @@
     flex-direction: column;
     gap: 4rem;
     padding-top: 4rem;
+}
+
+.projects-section > .content-wrapper {
     padding-left: 3rem;
+}
+
+.client-work-section > .content-wrapper {
+    padding-right: 3rem;
 }
 
 .project-card {
@@ -137,6 +144,7 @@
 
     .projects-section > .content-wrapper, .client-work-section > .content-wrapper {
         padding-left: 0;
+        padding-right: 0;
     }
 
     .project-card, .project-card.reverse {

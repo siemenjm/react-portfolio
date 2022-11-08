@@ -81,7 +81,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
                         <div className="horizontal-line-effect right"></div>
-                        <h2 className="line-header color-accent">Tech Stack</h2>
+                        <h2 className="line-header color-accent right">Tech Stack</h2>
                     </div>
                     <div className="line-effect-container vertical right">
                         <div className="vertical-line-effect"></div>
@@ -149,7 +149,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
                         <div className="horizontal-line-effect right"></div>
-                        <h2 className="line-header color-accent">Client Work</h2>
+                        <h2 className="line-header color-accent right">Client Work</h2>
                     </div>
                     <div className="line-effect-container vertical right">
                         <div className="vertical-line-effect"></div>
