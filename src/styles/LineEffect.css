@@ -1,11 +1,4 @@
-.test-section {
-    position: relative;
-    height: fit-content;
-    overflow: hidden;
-    justify-content: flex-start;
-}
-
-.test-header {
+.line-header {
     line-height: 2.441rem;
     background-color: var(--primary-darkest);
     z-index: 10;
@@ -40,19 +33,6 @@
     animation-iteration-count: infinite;
 }
 
-/* .vertical-line-container {
-    position: absolute;
-    width: 100%;
-    flex-grow: 1;
-    top: calc(2.441rem / 2);
-    overflow: hidden;
-    display: flex;
-}
-
-.vertical-line-container > .content-wrapper {
-    margin-left: 7.5rem;
-} */
-
 .line-effect-container.vertical {
     position: absolute;
     top: calc(2.441rem / 2);
@@ -66,14 +46,6 @@
     background-image: linear-gradient(var(--accent), var(--primary-dark), var(--accent), var(--primary-dark), var(--accent));
     animation: vertLineEffectPulse 2s linear;
     animation-iteration-count: infinite;
-}
-
-.test-section > .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding-top: 4rem;
-    padding-left: 5rem;
 }
 
 @keyframes horizLineEffectPulse {
@@ -95,12 +67,7 @@
 }
 
 @media (max-width: 1024px) {
-    .test-section > .content-wrapper {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .test-header {
+    .line-header {
         width: fit-content;
         margin: 0;
         align-self: center;

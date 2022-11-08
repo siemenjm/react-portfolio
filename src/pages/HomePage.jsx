@@ -58,7 +58,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
                         <div className="horizontal-line-effect"></div>
-                        <h2 className="test-header color-accent">About Me</h2>
+                        <h2 className="line-header color-accent">About Me</h2>
                     </div>
                     <div className="line-effect-container vertical">
                         <div className="vertical-line-effect"></div>
@@ -81,7 +81,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
                         <div className="horizontal-line-effect"></div>
-                        <h2 className="test-header color-accent">Tech Stack</h2>
+                        <h2 className="line-header color-accent">Tech Stack</h2>
                     </div>
                     <div className="line-effect-container vertical">
                         <div className="vertical-line-effect"></div>
@@ -134,7 +134,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
                         <div className="horizontal-line-effect"></div>
-                        <h2 className="test-header color-accent">Projects</h2>
+                        <h2 className="line-header color-accent">Projects</h2>
                     </div>
                     <div className="line-effect-container vertical">
                         <div className="vertical-line-effect"></div>
@@ -149,7 +149,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
                         <div className="horizontal-line-effect"></div>
-                        <h2 className="test-header color-accent">Client Work</h2>
+                        <h2 className="line-header color-accent">Client Work</h2>
                     </div>
                     <div className="line-effect-container vertical">
                         <div className="vertical-line-effect"></div>
@@ -181,21 +181,6 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <Carousel />
                 </div>
             </section> */}
-            <section className="test-section">
-                <div className="line-effects">
-                    <div className="line-effect-container horizontal">
-                        <div className="horizontal-line-effect"></div>
-                        <h2 className="test-header color-accent">Test Header</h2>
-                    </div>
-                    <div className="line-effect-container vertical">
-                        <div className="vertical-line-effect"></div>
-                    </div>
-                </div>
-                <div className="content-wrapper">
-                    <h4>Freelance Work Completed for Clients</h4>
-                    {allClientWork}
-                </div>
-            </section>
         </div>
     );
 }
