@@ -1,25 +1,16 @@
 .projects-section, .client-work-section  {
-    flex-direction: row;
-    gap: 7.5rem;
-    align-items: center;
-}
-
-.projects-section .first-letter, .client-work-section .first-letter {
-    padding-top: 1rem;
-}
-
-.client-work-section .seventh-letter {
-    padding-top: 1.5rem;
-}
-
-.projects-section .eighth-letter, .client-work-section .tenth-letter {
-    padding-bottom: 1rem;
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+    justify-content: flex-start;
 }
 
 .projects-section > .content-wrapper, .client-work-section > .content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    padding-top: 4rem;
+    padding-left: 3rem;
 }
 
 .project-card {
@@ -144,19 +135,8 @@
         flex-direction: column-reverse;
     }
 
-    .projects-section .first-letter, .client-work-section .first-letter {
-        padding-top: 0;
-        padding-left: 1rem;
-    }
-
-    .client-work-section .seventh-letter {
-        padding-top: 0;
-        padding-left: 1rem;
-    }
-    
-    .projects-section .eighth-letter, .client-work-section .tenth-letter {
-        padding-bottom: 0;
-        padding-right: 1rem;
+    .projects-section > .content-wrapper, .client-work-section > .content-wrapper {
+        padding-left: 0;
     }
 
     .project-card, .project-card.reverse {
