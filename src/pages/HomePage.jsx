@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/AboutMeSection.css';
 import '../styles/HeroSection.css';
+import '../styles/LineEffect.css';
 import '../styles/ProjectsSection.css';
 import '../styles/SectionHeader.css';
 import '../styles/TechStackSection.css';
@@ -186,6 +187,23 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="content-wrapper">
                     <h3>What do people have to say about me?</h3>
                     <Carousel />
+                </div>
+            </section>
+            <section className="test-section">
+                <div className="line-effects">
+                    <div className="line-effect-container horizontal">
+                        <div className="horizontal-line-effect"></div>
+                        <h2 className="test-header color-accent">Test Header</h2>
+                    </div>
+                    <div className="line-effect-container vertical">
+                        <div className="vertical-line-effect"></div>
+                    </div>
+                </div>
+                {/* <div className="test-section-header">
+                </div> */}
+                <div className="content-wrapper">
+                    <h4>Freelance Work Completed for Clients</h4>
+                    {allClientWork}
                 </div>
             </section>
         </div>
