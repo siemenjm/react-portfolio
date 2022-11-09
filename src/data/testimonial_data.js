@@ -2,6 +2,7 @@ import allSportsPhotographyLogo from '../assets/All_Sports_Photography_logo.png'
 import apaiDigitalLogo from '../assets/APAI_Digital_logo.png';
 import borrowedSugarLogo from '../assets/Borrowed_Sugar_logo.png';
 import generalAssemblyLogo from '../assets/General_Assembly_logo.png';
+import qavLogo from '../assets/QAV_logo.png';
 
 const testimonialData = [
     {
@@ -35,6 +36,14 @@ const testimonialData = [
         authorImageAlt: 'General Assembly logo',
         testimonial: '"Jared is an incredibly bright and talented student whom I had the pleasure of working with while he was a student here at General Assembly. His hard work and dedication during the course have allowed him to successfully master all of the challenging units this course offers. No matter what the topic is, and whether or not he has had prior experience with it, he always ensures to successfully completes all of his work on time and then adds to the MVP for deliverables and projects by going well above and beyond with stretch features to really add to his overall knowledge of the technologies."',
         link: 'https://generalassemb.ly/',
+    },
+    {
+        author: 'Brendon Van',
+        authorBusiness: 'Software Engineer, QAV Design',
+        authorImage: qavLogo,
+        authorImageAlt: 'QAV logo',
+        testimonial: '"A Prodigy. As good or better than Bill Gates is what comes to mind when I think about Jared. I’ve had the pleasure of knowing Jared for 4.5 months, during which we studied and collaborated on projects together in our bootcamp. Above all, I was impressed with Jared’s ability to understand complex problems and solve them faster than the average student. His unparalleled diligence allows him to create well crafted projects, and clean and precise code. And, of course, his ability to collaborate and bring joy to any team he comes aboard. Any company who is lucky enough to hire him will drastically improve the culture at the company. Jared would be a true asset for any positions requiring any full-stack work and comes with my heartfelt recommendation."',
+        link: 'https://www.linkedin.com/in/brendon-van/',
     },
 ];
 

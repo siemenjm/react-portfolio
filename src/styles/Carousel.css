@@ -10,30 +10,36 @@
     max-width: 100%;
     display: flex;
     overflow-x: visible;
-    animation: cycleCarousel 20s ease infinite;
+    animation: cycleCarousel 25s ease infinite;
 }
 
 @keyframes cycleCarousel {
-    20% {
+    15% {
         transform: translateX(0);
     }
-    25% {
+    20% {
         transform: translateX(-100%);
     }
-    45% {
+    35% {
         transform: translateX(-100%);
     }
-    50% {
+    40% {
         transform: translateX(-200%);
     }
-    70% {
+    55% {
         transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
     }
     75% {
         transform: translateX(-300%);
     }
+    80% {
+        transform: translateX(-400%);
+    }
     95% {
-        transform: translateX(-300%);
+        transform: translateX(-400%);
     }
     100% {
         transform: translateX(0);
