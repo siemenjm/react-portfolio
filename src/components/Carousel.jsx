@@ -4,8 +4,8 @@ import testimonialData from '../data/testimonial_data';
 import Testimonial from '../components/Testimonial';
 
 export default function Carousel() {
-    const allTestimonials = testimonialData.map((testimonial) => {
-        return <Testimonial testimonial={testimonial} />
+    const allTestimonials = testimonialData.map((testimonial, index) => {
+        return <Testimonial testimonial={testimonial} key={index} />
     });
 
     return (
