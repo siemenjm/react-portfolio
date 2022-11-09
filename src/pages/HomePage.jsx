@@ -163,7 +163,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 </div>
             </section>
             <section className="testimonial-section">
-            <div className="line-effects">
+                <div className="line-effects">
                     <div className="line-effect-container horizontal">
                         <div className="horizontal-line-effect left"></div>
                         <h2 className="line-header color-accent">Testimonials</h2>

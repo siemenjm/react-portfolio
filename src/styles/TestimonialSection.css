@@ -32,6 +32,7 @@
 
 .testimonial-author-wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
@@ -41,6 +42,7 @@
 }
 
 .author-name, .author-business {
+    text-align: center;
     font-weight: bold;
     color: var(--primary-light);
 }
