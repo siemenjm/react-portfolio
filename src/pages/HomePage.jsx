@@ -53,7 +53,9 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <h2 className='color-light'>I design and develop full stack websites.</h2>
                 <p>I’m a full stack software developer with a diverse skillset that ranges from building single page applications using React and Express.js, to quickly churning out a marketing site for a small business, to designing a website interface from the ground up using Adobe Xd. Currently freelancing, but looking to join a team.</p>
                 <div className="button-wrapper">
-                    <NavLink path={'/contact'} pageTitle={'Let\'s Connect'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                    <div className="inner-button-wrapper">
+                        <NavLink path={'/contact'} pageTitle={'Let\'s Connect'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                    </div>
                 </div>
             </section>
             <section className="about-me-section">

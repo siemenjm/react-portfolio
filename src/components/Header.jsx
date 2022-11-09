@@ -39,7 +39,9 @@ export default function Header({ currentPage, setCurrentPage }) {
                 <nav className='desktop-nav'>
                     {navLinks}
                     <div className="button-wrapper">
-                        <NavLink path={'/resume'} pageTitle={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                        <div className="inner-button-wrapper">
+                            <NavLink path={'/resume'} pageTitle={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                        </div>
                     </div>
                 </nav>
             </MediaQuery>

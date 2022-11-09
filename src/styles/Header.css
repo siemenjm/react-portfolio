@@ -72,6 +72,13 @@ a {
     background-color: transparent;
 }
 
+header .button-wrapper {
+    animation: spinningBackground 2s linear;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+    animation-fill-mode: none;
+}
+
 .responsive-nav > .nav-link {
     width: 100%;
     text-align: center;
