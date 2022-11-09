@@ -26,6 +26,7 @@ import testimonialData from '../data/testimonial_data';
 import Project from '../components/Project';
 import Testimonial from '../components/Testimonial';
 import Carousel from '../components/Carousel';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
     const allProjects = projectData.map((project, index) => {
@@ -173,6 +174,25 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                 <div className="content-wrapper">
                     <h3>What do people have to say about me?</h3>
                     <Carousel />
+                </div>
+            </section>
+            <section className="contact-section">
+                <div className="line-effects">
+                    <div className="line-effect-container horizontal">
+                        <div className="horizontal-line-effect right"></div>
+                        <h2 className="line-header color-accent right">Say Hi!</h2>
+                    </div>
+                    <div className="line-effect-container vertical right">
+                        <div className="vertical-line-effect"></div>
+                    </div>
+                </div>
+                <div className="content-wrapper">
+                    <h3>Like what you see? Reach out and let's connect!</h3>
+                    <p>Send me an email at <span>contact@jaredsiemen.com</span> or reach out to me on <a href='https://www.linkedin.com/in/jaredsiemen' target='_blank' rel='noopener noreferrer' >LinkedIn</a>. You can also check out my Github repos by clickint the icon below. I'm looking forward to hearing from you!</p>
+                    <div className="link-wrapper">
+                        <FaGithub className='project-link-icon' />
+                        <FaLinkedin className='project-link-icon' />
+                    </div>
                 </div>
             </section>
         </div>
