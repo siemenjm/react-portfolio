@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/AboutMeSection.css';
+import '../styles/ContactSection.css';
 import '../styles/HeroSection.css';
 import '../styles/LineEffect.css';
 import '../styles/ProjectsSection.css';
