@@ -1,3 +1,7 @@
+.hero-section {
+    height: calc(100vh - 100px);
+}
+
 .hero-section > .section-header-wrapper {
     position: absolute;
     height: 100%;
@@ -78,6 +82,7 @@
 /* ----- Mobile View ----- */
 @media (max-width: 1024px) {
     .hero-section > .section-header-wrapper {
+        height: auto;
         position: relative;
         align-self: center;
         flex-direction: row;
