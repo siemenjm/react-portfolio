@@ -1,7 +1,10 @@
 import React from 'react';
 
-export default function TechWrapper() {
+export default function TechWrapper({ tech, logo }) {
     return (
-        <div>TechWrapper</div>
+        <div className='tech-wrapper'>
+            <img src={logo} alt={`{tech} logo`} />
+            <p>{tech}</p>
+        </div>
     );
 }

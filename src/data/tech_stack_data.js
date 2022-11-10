@@ -1,18 +1,54 @@
+import htmlLogo from '../assets/HTML_logo.png';
+import cssLogo from '../assets/css_logo.png';
+import jsLogo from '../assets/JavaScript-logo.png';
+import pythonLogo from '../assets/python-logo-only.png';
+import reactLogo from '../assets/React-icon.svg';
+import nodeLogo from '../assets/Node.js_logo.svg';
+import expressLogo from '../assets/Expressjs.png';
+import mongoLogo from '../assets/MongoDB_Logo.svg';
+import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
+import wordpressLogo from '../assets/WordPress_logo.svg';
+
 const techStackData = [
     {
-        title: 'Thrift',
-        shortDesc: 'Financial Tracking App',
-        screenshot: thriftScreenshot,
-        screenshotAlt: 'Thrift screenshot showing a financial graph',
-        longDesc: 'Thrift is a money-tracking web application built using the PERN stack. Users can track their transactions, accounts, and the institutions that they belong to. Some basic charts are also implemented using Chart.js.',
-        projectTech: [
-            'PostgreSQL',
-            'Express.js',
-            'React.js',
-            'Node.js'
-        ],
-        githubLink: 'https://github.com/siemenjm/backend-thrift',
-        deployedLink: 'https://thrift-financial.netlify.app/',
+        tech: 'HTML',
+        logo: htmlLogo,
+    },
+    {
+        tech: 'CSS',
+        logo: cssLogo,
+    },
+    {
+        tech: 'JavaScript',
+        logo: jsLogo,
+    },
+    {
+        tech: 'Python',
+        logo: pythonLogo,
+    },
+    {
+        tech: 'React.js',
+        logo: reactLogo,
+    },
+    {
+        tech: 'Node.js',
+        logo: nodeLogo,
+    },
+    {
+        tech: 'Express.js',
+        logo: expressLogo,
+    },
+    {
+        tech: 'MongoDB',
+        logo: mongoLogo,
+    },
+    {
+        tech: 'PostgreSQL',
+        logo: postgresqlLogo,
+    },
+    {
+        tech: 'WordPress',
+        logo: wordpressLogo,
     },
 ];
 
