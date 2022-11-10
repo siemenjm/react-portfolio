@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import headshot from '../assets/headshot.png';
 import techStackData from '../data/tech_stack_data';
+import Carousel from '../components/Carousel';
 import TechWrapper from '../components/TechWrapper';
 
 export default function AboutMePage() {
@@ -46,6 +47,21 @@ export default function AboutMePage() {
                 </div>
                 <div className="content-wrapper">
                     {allTech}
+                </div>
+            </section>
+            <section className="testimonial-section">
+                <div className="line-effects">
+                    <div className="line-effect-container horizontal">
+                        <div className="horizontal-line-effect left"></div>
+                        <h2 className="line-header color-accent">Testimonials</h2>
+                    </div>
+                    <div className="line-effect-container vertical">
+                        <div className="vertical-line-effect"></div>
+                    </div>
+                </div>
+                <div className="content-wrapper">
+                    <h3>What do people have to say about me?</h3>
+                    <Carousel />
                 </div>
             </section>
         </div>
