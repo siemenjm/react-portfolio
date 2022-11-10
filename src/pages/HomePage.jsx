@@ -18,14 +18,11 @@ import expressLogo from '../assets/Expressjs.png';
 import mongoLogo from '../assets/MongoDB_Logo.svg';
 import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import wordpressLogo from '../assets/WordPress_logo.svg';
-import allSportsPhotographyLogo from '../assets/All_Sports_Photography_logo.png';
 import NavLink from '../components/NavLink';
 import { Link } from 'react-router-dom';
 import clientWorkData from '../data/client_work_data';
 import projectData from '../data/project_data';
-import testimonialData from '../data/testimonial_data';
 import Project from '../components/Project';
-import Testimonial from '../components/Testimonial';
 import Carousel from '../components/Carousel';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
