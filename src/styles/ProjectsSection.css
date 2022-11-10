@@ -153,7 +153,7 @@
         flex-direction: column-reverse;
     }
 
-    .projects-section > .content-wrapper, .client-work-section > .content-wrapper {
+    .projects-section > .content-wrapper, .client-work-section > .content-wrapper, .client-work-section > .content-wrapper.left {
         padding-left: 0;
         padding-right: 0;
     }

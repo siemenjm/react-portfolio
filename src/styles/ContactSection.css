@@ -50,7 +50,8 @@
 }
 
 @media (max-width: 1024px) {
-    .contact-section > .content-wrapper {
+    .contact-section > .content-wrapper, .contact-section > .content-wrapper.left {
+        padding-left: 0;
         padding-right: 0;
     }
     
