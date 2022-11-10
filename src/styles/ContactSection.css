@@ -5,6 +5,12 @@
     justify-content: flex-start;
 }
 
+.contact-section.single-page {
+    opacity: 0;
+    animation: opacityAnimation 2s linear;
+    animation-fill-mode: forwards;
+}
+
 .contact-section > .content-wrapper {
     display: flex;
     flex-direction: column;
@@ -12,6 +18,11 @@
     gap: 2rem;
     padding-top: 4rem;
     padding-right: 3rem;
+}
+
+.contact-section > .content-wrapper.left {
+    padding-left: 3rem;
+    padding-right: 0;
 }
 
 .contact-section span, .contact-section a {
