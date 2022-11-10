@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import '../styles/AboutMeSection.css';
 import '../styles/ContactSection.css';
 import '../styles/HeroSection.css';
@@ -8,25 +10,19 @@ import '../styles/SectionHeader.css';
 import '../styles/TechStackSection.css';
 import '../styles/TestimonialSection.css';
 import headshot from '../assets/headshot.png';
-import htmlLogo from '../assets/HTML_logo.png';
-import cssLogo from '../assets/css_logo.png';
-import jsLogo from '../assets/JavaScript-logo.png';
-import pythonLogo from '../assets/python-logo-only.png';
-import reactLogo from '../assets/React-icon.svg';
-import nodeLogo from '../assets/Node.js_logo.svg';
-import expressLogo from '../assets/Expressjs.png';
-import mongoLogo from '../assets/MongoDB_Logo.svg';
-import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
-import wordpressLogo from '../assets/WordPress_logo.svg';
-import NavLink from '../components/NavLink';
-import { Link } from 'react-router-dom';
 import clientWorkData from '../data/client_work_data';
 import projectData from '../data/project_data';
-import Project from '../components/Project';
+import techStackData from '../data/tech_stack_data';
 import Carousel from '../components/Carousel';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import NavLink from '../components/NavLink';
+import Project from '../components/Project';
+import TechWrapper from '../components/TechWrapper';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
+    const allTech = techStackData.map((project, index) => {
+        return <TechWrapper tech={project.tech} logo={project.logo} key={`${project.tech} - ${index}`}/>
+    });
+    
     const allProjects = projectData.map((project, index) => {
         return <Project project={project} projectIndex={index} key={`${project.title}-${index}`} />;           
     });
@@ -89,46 +85,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     </div>
                 </div>
                 <div className="content-wrapper">
-                    <div className="tech-wrapper">
-                        <img src={htmlLogo} alt="HTML logo" />
-                        <p>HTML</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={cssLogo} alt="CSS logo" />
-                        <p>CSS</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={jsLogo} alt="JavaScript logo" />
-                        <p>JavaScript</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={pythonLogo} alt="Python logo" />
-                        <p>Python</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={reactLogo} alt="React.js logo" />
-                        <p>React.js</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={nodeLogo} alt="Node.js logo" className='light-background' />
-                        <p>Node.js</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={expressLogo} alt="Express.js logo" className='light-background' />
-                        <p>Express.js</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={mongoLogo} alt="MongoDB logo" className='light-background' />
-                        <p>MongoDB</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={postgresqlLogo} alt="PostgreSQL logo" />
-                        <p>PostgreSQL</p>
-                    </div>
-                    <div className="tech-wrapper">
-                        <img src={wordpressLogo} alt="WordPress logo" className='light-background' />
-                        <p>WordPress</p>
-                    </div>
+                    {allTech}
                 </div>
             </section>
             <section className="projects-section">
