@@ -18,12 +18,17 @@
     padding-top: 4rem;
 }
 
-.projects-section > .content-wrapper {
+.projects-section > .content-wrapper, .client-work-section > .content-wrapper.left {
     padding-left: 3rem;
 }
 
 .client-work-section > .content-wrapper {
     padding-right: 3rem;
+}
+
+.client-work-section > .content-wrapper.left {
+    padding-left: 3rem;
+    padding-right: 0;
 }
 
 .project-card {
