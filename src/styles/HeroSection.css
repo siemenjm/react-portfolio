@@ -115,4 +115,8 @@
         max-width: 100%;
         margin-top: 1rem;
     }
+
+    .hero-section > .button-wrapper {
+        align-self: center;
+    }
 }
