@@ -7,7 +7,7 @@ export default function ContactPage() {
             <section className="contact-section single-page">
                 <div className="line-effects">
                     <div className="line-effect-container horizontal">
-                        <div className="horizontal-line-effect"></div>
+                        <div className="horizontal-line-effect left"></div>
                         <h2 className="line-header color-accent">Say Hi!</h2>
                     </div>
                     <div className="line-effect-container vertical">
