@@ -5,6 +5,12 @@
     justify-content: flex-start;
 }
 
+.projects-section.single-page, .client-work-section.single-page {
+    opacity: 0;
+    animation: opacityAnimation 2s linear;
+    animation-fill-mode: forwards;
+}
+
 .projects-section > .content-wrapper, .client-work-section > .content-wrapper {
     display: flex;
     flex-direction: column;
