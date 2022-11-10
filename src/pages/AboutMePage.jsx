@@ -2,10 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import headshot from '../assets/headshot.png';
 import techStackData from '../data/tech_stack_data';
-import NavLink from '../components/NavLink';
 import TechWrapper from '../components/TechWrapper';
 
-export default function AboutMePage({ currentPage, setCurrentPage }) {
+export default function AboutMePage() {
     const allTech = techStackData.map((project, index) => {
         return <TechWrapper tech={project.tech} logo={project.logo} key={`${project.tech} - ${index}`}/>
     });
