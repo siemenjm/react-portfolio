@@ -1,0 +1,49 @@
+.contact-section  {
+    position: relative;
+    height: fit-content;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+
+.contact-section > .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding-top: 4rem;
+    padding-right: 3rem;
+}
+
+.contact-section span, .contact-section a {
+    color: var(--accent);
+}
+
+.contact-section a:hover {
+    color: white;
+}
+
+.contact-section .link-wrapper {
+    align-self: center;
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-section .link-wrapper > .project-link-icon {
+    fill: var(--accent);
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact-section .link-wrapper > .project-link-icon:hover {
+    fill: white;
+}
+
+@media (max-width: 1024px) {
+    .contact-section > .content-wrapper {
+        padding-right: 0;
+    }
+    
+    .contact-section > .content-wrapper > h3 {
+        text-align: center;
+    }
+}

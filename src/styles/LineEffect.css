@@ -1,0 +1,115 @@
+.line-header {
+    line-height: 2.441rem;
+    background-color: var(--primary-darkest);
+    z-index: 10;
+    width: fit-content;
+    margin: 0 2rem;
+    padding: 0 1rem;
+}
+
+.line-header.right {
+    margin: 0 2rem 0 auto;
+}
+
+.line-effects {
+    position: absolute;
+    margin: 5rem;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.line-effect-container.horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontal-line-effect {
+    position: absolute;
+    left: -100%;
+    width: 200%;
+    height: 2px;
+    background-image: linear-gradient(90deg, var(--accent), var(--primary-dark), var(--accent), var(--primary-dark), var(--accent));
+}
+
+.horizontal-line-effect.left {
+    animation: horizLineEffectPulse 2s linear;
+    animation-iteration-count: infinite;
+}
+
+.horizontal-line-effect.right {
+    left: 0;
+    right: -100%;
+    animation: reverseHorizLineEffectPulse 2s linear;
+    animation-iteration-count: infinite;
+}
+
+.line-effect-container.vertical {
+    position: absolute;
+    top: calc(2.441rem / 2);
+    height: 100%;
+    overflow: hidden;
+}
+
+.line-effect-container.vertical.right {
+    right: 0;
+}
+
+.vertical-line-effect {
+    width: 2px;
+    height: 200%;
+    background-image: linear-gradient(var(--accent), var(--primary-dark), var(--accent), var(--primary-dark), var(--accent));
+    animation: vertLineEffectPulse 2s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes horizLineEffectPulse {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes reverseHorizLineEffectPulse {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes vertLineEffectPulse {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 1024px) {
+    .line-header {
+        width: fit-content;
+        margin: 0;
+        align-self: center;
+    }
+
+    .line-header.right {
+        margin: 0;
+    }
+
+    .line-effects {
+        margin: 1rem;
+    }
+
+    .line-effect-container.vertical {
+        display: none;
+    }
+}

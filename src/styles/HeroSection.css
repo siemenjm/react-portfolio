@@ -1,0 +1,113 @@
+.hero-section > .section-header-wrapper {
+    position: absolute;
+    height: 100%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section > .section-header-wrapper > .header-letter {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5rem;
+}
+
+.hero-section .first-letter {
+    animation: letterAnimation 1s ease-out;
+}
+.hero-section .second-letter {
+    animation: letterAnimation 1.25s ease-out;
+}
+.hero-section .third-letter {
+    animation: letterAnimation 1.5s ease-out;
+}
+.hero-section .fourth-letter {
+    animation: letterAnimation 1.75s ease-out;
+}
+.hero-section .fifth-letter {
+    animation: letterAnimation 2s ease-out;
+}
+
+.hero-section > h2, .hero-section > p {
+    opacity: 0;
+    animation: opacityAnimation 2s linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+.hero-section > .button-wrapper {
+    opacity: 0;
+    animation: opacityAnimation 2s linear, spinningBackground 2s linear;
+    animation-delay: 2s, 0s;
+    animation-iteration-count: 1, infinite;
+    animation-fill-mode: forwards, none;
+}
+
+.hero-section > h2 {
+    max-width: 75%;
+}
+
+.hero-section > p {
+    max-width: 66%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ----- Animations ----- */
+@keyframes letterAnimation {
+    0% {
+        transform: translateX(-100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* ----- Mobile View ----- */
+@media (max-width: 1024px) {
+    .hero-section > .section-header-wrapper {
+        position: relative;
+        align-self: center;
+        flex-direction: row;
+        margin-bottom: 2rem;
+    }
+
+    .hero-section .first-letter {
+        animation: letterAnimation 2s ease-out;
+    }
+    .hero-section .second-letter {
+        animation: letterAnimation 1.75s ease-out;
+    }
+    .hero-section .third-letter {
+        animation: letterAnimation 1.5s ease-out;
+    }
+    .hero-section .fourth-letter {
+        animation: letterAnimation 1.25s ease-out;
+    }
+    .hero-section .fifth-letter {
+        animation: letterAnimation 1s ease-out;
+    }
+
+    .hero-section > h2 {
+        max-width: 100%;
+        font-size: 1.953rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-section > p {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
