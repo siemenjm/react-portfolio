@@ -2,7 +2,6 @@ import allSportsPhotographyLogo from '../assets/All_Sports_Photography_logo.png'
 import apaiDigitalLogo from '../assets/APAI_Digital_logo.png';
 import borrowedSugarLogo from '../assets/Borrowed_Sugar_logo.png';
 import generalAssemblyLogo from '../assets/General_Assembly_logo.png';
-import qavLogo from '../assets/QAV_logo.png';
 
 const testimonialData = [
     {

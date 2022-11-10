@@ -26,7 +26,6 @@ export default function Header({ currentPage, setCurrentPage }) {
     dropdownVisibility ? dropdownStyle = 'active-dropdown' : dropdownStyle = '';
 
     function handleClick(e) {
-        console.log('clicked');
         dropdownVisibility ? setDropdownVisibility(false) : setDropdownVisibility(true);
     }
 
