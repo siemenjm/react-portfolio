@@ -4,6 +4,7 @@ import MediaQuery from 'react-responsive';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 import logo from '../assets/Color-logo-no-background.png';
+import resume from '../documents/resume.pdf';
 import NavLink from './NavLink';
 import { useState } from 'react';
 
@@ -39,7 +40,7 @@ export default function Header({ currentPage, setCurrentPage }) {
                     {navLinks}
                     <div className="button-wrapper">
                         <div className="inner-button-wrapper">
-                            <NavLink path={'/resume'} pageTitle={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+                            <a href={resume} target='blank' className="nav-link">Resume</a>
                         </div>
                     </div>
                 </nav>
@@ -48,7 +49,7 @@ export default function Header({ currentPage, setCurrentPage }) {
                 {dropdownVisibility ? <FaRegWindowClose onClick={handleClick} className={'menu-icon'} /> : <FaBars onClick={handleClick} className={'menu-icon'} />}
                 <nav onClick={handleClick} className={`responsive-nav ${dropdownStyle}`} >
                     {dropdownVisibility ? navLinks  : <></>}
-                    {dropdownVisibility ? <NavLink path={'/resume'} pageTitle={'Resume'} currentPage={currentPage} setCurrentPage={setCurrentPage} /> : <></>}
+                    {dropdownVisibility ? <a href={resume} target='blank' className="nav-link">Resume</a> : <></>}
                 </nav>
             </MediaQuery>
         </header>

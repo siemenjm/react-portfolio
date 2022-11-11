@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import '../styles/AboutMeSection.css';
 import '../styles/ContactSection.css';
@@ -10,6 +9,7 @@ import '../styles/SectionHeader.css';
 import '../styles/TechStackSection.css';
 import '../styles/TestimonialSection.css';
 import headshot from '../assets/headshot.png';
+import resume from '../documents/resume.pdf';
 import clientWorkData from '../data/client_work_data';
 import projectData from '../data/project_data';
 import techStackData from '../data/tech_stack_data';
@@ -66,7 +66,7 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                         <h4>I'm a freelance full stack software developer working remotely out of Flint, Michigan.</h4>
                         <p>Hello, I’m Jared! I love, love, love designing and building anything that runs on code, especially if it lives on the internet. My passion for web development started in early 2020 when I was laid off due to COVID, was stuck in lockdown, and needed something to do. I found some coding challenges online and haven’t looked back!</p>
                         <p>Since discovering this passion, I have started a freelance web design and development business, launched several websites out into the wild, and completed a software engineering bootcamp. My main focus now is leveraging the technical skills that I learned in the bootcamp in tandem with the communication and customer facing skills that I learned freelancing to deliver more and more complex products to my clients.</p>
-                        <p>Feel free to take a look at my <Link to={'/resume'}>resume</Link>!</p>
+                        <p>Feel free to take a look at my <a href={resume} target='blank' className="resume">resume</a>!</p>
                     </div>
                     <div className="headshot-wrapper">
                         <img src={headshot} alt="Jared Siemen headshot image" />
