@@ -14,12 +14,12 @@ export default function Footer() {
                 </Link>
                 <div className="button-wrapper">
                     <div className="inner-button-wrapper">
-                        <a href={resume} target='blank' className="resume">Resume</a>
+                        <a href={resume} target='blank' className="nav-link">Resume</a>
                     </div>
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>Copyright 2022 Jared Siemen, All Rights Reserved | Designed and Built by <a href='https://jaredsiemen.com'>Jared Siemen</a></p>
+                <p>Copyright 2022 Jared Siemen, All Rights Reserved | Designed and Built by <Link to={'/'} >Jared Siemen</Link></p>
             </div>
         </footer>
     );
