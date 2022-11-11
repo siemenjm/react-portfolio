@@ -13,42 +13,52 @@ const techStackData = [
     {
         tech: 'HTML',
         logo: htmlLogo,
+        lightBackground: false,
     },
     {
         tech: 'CSS',
         logo: cssLogo,
+        lightBackground: false,
     },
     {
         tech: 'JavaScript',
         logo: jsLogo,
+        lightBackground: false,
     },
     {
         tech: 'Python',
         logo: pythonLogo,
+        lightBackground: false,
     },
     {
         tech: 'React.js',
         logo: reactLogo,
+        lightBackground: false,
     },
     {
         tech: 'Node.js',
         logo: nodeLogo,
+        lightBackground: true,
     },
     {
         tech: 'Express.js',
         logo: expressLogo,
+        lightBackground: true,
     },
     {
         tech: 'MongoDB',
         logo: mongoLogo,
+        lightBackground: true,
     },
     {
         tech: 'PostgreSQL',
         logo: postgresqlLogo,
+        lightBackground: false,
     },
     {
         tech: 'WordPress',
         logo: wordpressLogo,
+        lightBackground: true,
     },
 ];
 

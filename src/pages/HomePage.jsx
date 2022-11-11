@@ -20,7 +20,7 @@ import TechWrapper from '../components/TechWrapper';
 
 export default function HomePage({ currentPage, setCurrentPage }) {
     const allTech = techStackData.map((project, index) => {
-        return <TechWrapper tech={project.tech} logo={project.logo} key={`${project.tech} - ${index}`}/>
+        return <TechWrapper tech={project.tech} logo={project.logo} lightBackground={project.lightBackground} key={`${project.tech} - ${index}`}/>
     });
     
     const allProjects = projectData.map((project, index) => {

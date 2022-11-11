@@ -35,21 +35,9 @@
 }
 
 .tech-wrapper .light-background {
-    background-color: var(--primary-light);
+    background-color: white;
     padding: 0.5rem;
     border-radius: 5px;
-}
-
-.tech-stack-section .first-letter {
-    padding-top: 1rem;
-}
-
-.tech-stack-section .fifth-letter {
-    padding-top: 1.5rem;
-}
-
-.tech-stack-section .ninth-letter {
-    padding-bottom: 1rem;
 }
 
 
@@ -66,25 +54,5 @@
         grid-template-rows: repeat(5, 1fr);
         gap: 5rem;
         margin-top: 5rem;
-    }
-
-    .tech-stack-section .header-letter {
-        font-size: 3rem;
-        line-height: 5rem;
-    }
-
-    .tech-stack-section .first-letter {
-        padding-top: 0;
-        padding-left: 1rem;
-    }
-
-    .tech-stack-section .fifth-letter {
-        padding-top: 0;
-        padding-left: 1rem;
-    }
-
-    .tech-stack-section .ninth-letter {
-        padding-bottom: 0;
-        padding-right: 1rem;
     }
 }
