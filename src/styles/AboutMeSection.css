@@ -5,6 +5,12 @@
     justify-content: flex-start;
 }
 
+.about-me-section.single-page {
+    opacity: 0;
+    animation: opacityAnimation 2s linear;
+    animation-fill-mode: forwards;
+}
+
 .about-me-section > .content-wrapper {
     display: flex;
     flex-direction: row;
