@@ -73,6 +73,10 @@ p {
     background-color: var(--primary-dark);
 }
 
+.inner-button-wrapper > .nav-link {
+    padding: 0.5rem 1rem;
+}
+
 .button-wrapper > .nav-link {
     color: var(--accent);
 }
