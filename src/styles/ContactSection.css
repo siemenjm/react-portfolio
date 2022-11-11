@@ -39,7 +39,7 @@
     gap: 1rem;
 }
 
-.contact-section .link-wrapper > .project-link-icon {
+.contact-section .link-wrapper .project-link-icon {
     fill: var(--accent);
     height: 3rem;
     width: 3rem;

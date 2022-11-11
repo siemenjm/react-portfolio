@@ -147,8 +147,12 @@ export default function HomePage({ currentPage, setCurrentPage }) {
                     <h3>Like what you see? Reach out and let's connect!</h3>
                     <p>Send me an email at <span>contact@jaredsiemen.com</span> or reach out to me on <a href='https://www.linkedin.com/in/jaredsiemen' target='_blank' rel='noopener noreferrer' >LinkedIn</a>. You can also check out my Github repos by clickint the icon below. I'm looking forward to hearing from you!</p>
                     <div className="link-wrapper">
-                        <FaGithub className='project-link-icon' />
-                        <FaLinkedin className='project-link-icon' />
+                        <a href="https://github.com/siemenjm/" target='_blank' rel='noopener noreferrer' >
+                            <FaGithub className='project-link-icon' />
+                        </a>
+                        <a href='https://www.linkedin.com/in/jaredsiemen/' target='_blank' rel='noopener noreferrer' >
+                            <FaLinkedin className='project-link-icon' />
+                        </a>
                     </div>
                 </div>
             </section>
