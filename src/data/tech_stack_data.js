@@ -1,12 +1,17 @@
-import htmlLogo from '../assets/HTML_logo.png';
+import adobeXdLogo from '../assets/AdobeXD_logo.png';
+import bootstrapLogo from '../assets/Bootstrap_logo.svg';
 import cssLogo from '../assets/css_logo.png';
+import elementorLogo from '../assets/Elementor_logo.png';
+import expressLogo from '../assets/Expressjs.png';
+import githubLogo from '../assets/GitHub_logo.png';
+import htmlLogo from '../assets/HTML_logo.png';
 import jsLogo from '../assets/JavaScript-logo.png';
+import mongoLogo from '../assets/MongoDB_Logo.svg';
+import nodeLogo from '../assets/Node.js_logo.svg';
+import phpLogo from '../assets/php_logo.png';
+import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import pythonLogo from '../assets/python-logo-only.png';
 import reactLogo from '../assets/React-icon.svg';
-import nodeLogo from '../assets/Node.js_logo.svg';
-import expressLogo from '../assets/Expressjs.png';
-import mongoLogo from '../assets/MongoDB_Logo.svg';
-import postgresqlLogo from '../assets/PostgreSQL_logo.svg';
 import wordpressLogo from '../assets/WordPress_logo.svg';
 
 const techStackData = [
@@ -18,6 +23,11 @@ const techStackData = [
     {
         tech: 'CSS',
         logo: cssLogo,
+        lightBackground: false,
+    },
+    {
+        tech: 'Bootstrap',
+        logo: bootstrapLogo,
         lightBackground: false,
     },
     {
@@ -56,9 +66,29 @@ const techStackData = [
         lightBackground: false,
     },
     {
+        tech: 'PHP',
+        logo: phpLogo,
+        lightBackground: false,
+    },
+    {
         tech: 'WordPress',
         logo: wordpressLogo,
         lightBackground: true,
+    },
+    {
+        tech: 'Elementor',
+        logo: elementorLogo,
+        lightBackground: false,
+    },
+    {
+        tech: 'Adobe Xd',
+        logo: adobeXdLogo,
+        lightBackground: false,
+    },
+    {
+        tech: 'GitHub',
+        logo: githubLogo,
+        lightBackground: false,
     },
 ];
 
