@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import headshot from '../assets/headshot.png';
 import resume from '../documents/resume.pdf';
 import techStackData from '../data/tech_stack_data';

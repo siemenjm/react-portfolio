@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import '../styles/AboutMeSection.css';
 import '../styles/ContactSection.css';
