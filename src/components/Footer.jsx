@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
 import logo from '../assets/Color-logo-no-background.png';
-import NavLink from './NavLink';
+import resume from '../documents/resume.pdf';
 
 export default function Footer() {
     return (
@@ -14,7 +14,7 @@ export default function Footer() {
                 </Link>
                 <div className="button-wrapper">
                     <div className="inner-button-wrapper">
-                        <NavLink path={'/resume'} pageTitle={'Resume'} />
+                        <a href={resume} target='blank' className="resume">Resume</a>
                     </div>
                 </div>
             </div>
