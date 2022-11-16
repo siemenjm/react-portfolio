@@ -17,7 +17,7 @@
     font-weight: 600;
     line-height: 5rem;
 }
-/* 
+
 .hero-section .first-letter {
     animation: letterAnimation 1s ease-out;
 }
@@ -32,7 +32,7 @@
 }
 .hero-section .fifth-letter {
     animation: letterAnimation 2s ease-out;
-} */
+}
 
 .hero-section > h2, .hero-section > p {
     opacity: 0;
