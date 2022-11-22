@@ -13,7 +13,7 @@ function App() {
     return (
         <>
             <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
-            <Main currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <Main />
             <Footer />
         </>
     );
