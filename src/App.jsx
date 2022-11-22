@@ -7,6 +7,7 @@ import { useLocation } from 'react-router';
 
 function App() {
     const location = useLocation();
+    console.log(location)
 
     const [currentPage, setCurrentPage] = useState(location.pathname);
 
