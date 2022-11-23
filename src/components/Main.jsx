@@ -6,10 +6,10 @@ import ContactPage from '../pages/ContactPage';
 import HomePage from '../pages/HomePage';
 import ProjectsPage from '../pages/ProjectsPage';
 
-export default function Main() {
+export default function Main({ currentPage, setCurrentPage }) {
     return (
         <Routes>
-            <Route exact path='/' element={<HomePage />}/>
+            <Route exact path='/' element={<HomePage currentPage={currentPage} setCurrentPage={setCurrentPage} />}/>
             <Route path='/about-me' element={<AboutMePage />}/>
             <Route path='/projects' element={<ProjectsPage />}/>
             <Route path='/client-work' element={<ClientWorkPage />}/>
