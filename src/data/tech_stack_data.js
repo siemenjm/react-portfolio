@@ -1,12 +1,14 @@
 import adobeXdLogo from '../assets/AdobeXD_logo.png';
 import bootstrapLogo from '../assets/Bootstrap_logo.svg';
 import cssLogo from '../assets/css_logo.png';
+import djangoLogo from '../assets/Django_logo.png';
 import elementorLogo from '../assets/Elementor_logo.png';
 import expressLogo from '../assets/Expressjs.png';
 import githubLogo from '../assets/GitHub_logo.png';
 import htmlLogo from '../assets/HTML_logo.png';
 import jsLogo from '../assets/JavaScript-logo.png';
 import mongoLogo from '../assets/MongoDB_Logo.svg';
+import mongooseLogo from '../assets/MongooseJS_logo.png';
 import nextjsLogo from '../assets/NextJS_logo.png';
 import nodeLogo from '../assets/Node.js_logo.svg';
 import phpLogo from '../assets/php_logo.png';
@@ -64,6 +66,11 @@ const techStackData = [
     lightBackground: true,
   },
   {
+    tech: 'Mongoose.js',
+    logo: mongooseLogo,
+    lightBackground: false,
+  },
+  {
     tech: 'PostgreSQL',
     logo: postgresqlLogo,
     lightBackground: false,
@@ -81,6 +88,11 @@ const techStackData = [
   {
     tech: 'Python',
     logo: pythonLogo,
+    lightBackground: false,
+  },
+  {
+    tech: 'Django',
+    logo: djangoLogo,
     lightBackground: false,
   },
   {
